@@ -47,9 +47,10 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:textColor="@android:color/white"
-                    android:fontFamily="@font/berlinlight"
+                    android:fontFamily="@font/poppinsmed"
+                    android:textStyle="bold"
                     android:textSize="20sp"
-                    android:text="Adrian Daniel Kristanto"/>
+                    android:text="Adrian Daniel Kristanto" />
             </LinearLayout>
 
         </FrameLayout>
@@ -75,14 +76,13 @@
 
                 <TextView
                     android:layout_toEndOf="@id/logo_about"
-                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:autoSizeMinTextSize="18sp"
-                    android:autoSizeMaxTextSize="28sp"
-                    android:autoSizeStepGranularity="2sp"
+                    android:textSize="16sp"
                     android:textColor="@android:color/black"
                     android:text="@string/about_developer"
+                    android:fontFamily="@font/poppinsreg"
                     android:textStyle="bold"
                     android:layout_centerInParent="true" />
 
@@ -120,10 +120,10 @@
                     android:layout_marginLeft="16dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textColor="@android:color/black"
                     android:text="@string/contact"
-                    android:fontFamily="@font/berlinlight"
+                    android:fontFamily="@font/poppinsmed"
                     android:layout_centerInParent="true"/>
 
                 <ImageView
@@ -160,10 +160,10 @@
                     android:layout_marginLeft="16dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textColor="@android:color/black"
                     android:text="@string/feedback"
-                    android:fontFamily="@font/berlinlight"
+                    android:fontFamily="@font/poppinsmed"
                     android:layout_centerInParent="true"/>
 
                 <ImageView
@@ -200,10 +200,10 @@
                     android:layout_marginLeft="16dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textColor="@android:color/black"
                     android:text="@string/donate"
-                    android:fontFamily="@font/berlinlight"
+                    android:fontFamily="@font/poppinsmed"
                     android:layout_centerInParent="true"/>
 
                 <ImageView
