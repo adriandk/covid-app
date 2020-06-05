@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <FrameLayout
+            android:id="@+id/profil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:layout_marginBottom="8dp"
+            android:padding="24dp"
+            android:elevation="15dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="205dp"
+                    android:layout_height="205dp"
+                    android:layout_gravity="center"
+                    android:padding="16dp"
+                    android:elevation="15dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/buttonsoundwarna"
+                        android:layout_centerInParent="true"/>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/gambar"
+                        android:src="@drawable/photo"/>
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/berlinlight"
+                    android:textSize="20sp"
+                    android:text="Adrian Daniel Kristanto"/>
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            card_view:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/logo_about"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/person"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"/>
+
+                <TextView
+                    android:layout_toEndOf="@id/logo_about"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoSizeMaxTextSize="24sp"
+                    android:autoSizeMinTextSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:text="@string/about_developer"
+                    android:fontFamily="@font/berlinlight"
+                    android:layout_centerInParent="true"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right_arrow"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            card_view:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/logo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/phone"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"/>
+
+                <TextView
+                    android:layout_toEndOf="@id/logo2"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:text="@string/contact"
+                    android:fontFamily="@font/berlinlight"
+                    android:layout_centerInParent="true"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right_arrow"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            card_view:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/logo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/feedback"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"/>
+
+                <TextView
+                    android:layout_toEndOf="@id/logo3"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:text="@string/feedback"
+                    android:fontFamily="@font/berlinlight"
+                    android:layout_centerInParent="true"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right_arrow"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            card_view:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/logo4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/gift"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"/>
+
+                <TextView
+                    android:layout_toEndOf="@id/logo4"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:text="@string/donate"
+                    android:fontFamily="@font/berlinlight"
+                    android:layout_centerInParent="true"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right_arrow"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

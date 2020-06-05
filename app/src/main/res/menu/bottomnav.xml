@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        app:showAsAction="always"
+        android:icon="@drawable/home"/>
+
+<!--    <item-->
+<!--        android:id="@+id/search"-->
+<!--        android:title="Search"-->
+<!--        app:showAsAction="always"-->
+<!--        android:icon="@drawable/search"/>-->
+
+    <item
+        android:id="@+id/kontak"
+        android:title="About"
+        app:showAsAction="always"
+        android:icon="@drawable/about"/>
+
+</menu>

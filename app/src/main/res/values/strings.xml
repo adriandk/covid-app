@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">COVID-19 Tracker</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about_developer">About Developer</string>
+    <string name="contact">Contact</string>
+    <string name="donate">Donate</string>
+    <string name="feedback">Help &amp; Feedback</string>
+</resources>
