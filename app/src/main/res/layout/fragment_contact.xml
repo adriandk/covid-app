@@ -78,12 +78,13 @@
                     android:layout_marginLeft="16dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:autoSizeMaxTextSize="24sp"
                     android:autoSizeMinTextSize="18sp"
+                    android:autoSizeMaxTextSize="28sp"
+                    android:autoSizeStepGranularity="2sp"
                     android:textColor="@android:color/black"
                     android:text="@string/about_developer"
-                    android:fontFamily="@font/berlinlight"
-                    android:layout_centerInParent="true"/>
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true" />
 
                 <ImageView
                     android:layout_width="wrap_content"
