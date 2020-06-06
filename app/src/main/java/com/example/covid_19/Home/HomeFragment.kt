@@ -10,6 +10,8 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.covid_19.R
 import kotlinx.android.synthetic.main.fragment_home.*
+import java.text.SimpleDateFormat
+import java.util.*
 
 class HomeFragment : Fragment() {
 
@@ -45,12 +47,20 @@ class HomeFragment : Fragment() {
 
         refresh_swipe.setOnRefreshListener {
             mainViewModel.getData().observe(viewLifecycleOwner, Observer { DataItems ->
-                if (DataItems != null){
+                if (DataItems != null) {
                     adapter.setData(DataItems)
                     refresh_swipe.isRefreshing = false
                 }
             })
         }
+
+        val currentDate: String = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault()).format(Date())
+
+        val currentTime: String = SimpleDateFormat("HH:mm", Locale.getDefault()).format(Date())
+
+        tanggal.text = "$currentDate, "
+        waktu.text = currentTime
+
     }
 
     private fun showload(state : Boolean){
