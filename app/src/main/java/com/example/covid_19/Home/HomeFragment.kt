@@ -27,6 +27,9 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        var currentDate: String = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault()).format(Date())
+        var currentTime: String = SimpleDateFormat("HH:mm", Locale.getDefault()).format(Date())
+
         adapter = Adapter()
         adapter.notifyDataSetChanged()
 
@@ -34,7 +37,8 @@ class HomeFragment : Fragment() {
         data_corona.adapter = adapter
 
         mainViewModel = ViewModelProvider(this, ViewModelProvider.NewInstanceFactory()).get(
-            GetAPI::class.java)
+            GetAPI::class.java
+        )
 
         mainViewModel.setData()
         showload(true)
@@ -50,17 +54,14 @@ class HomeFragment : Fragment() {
                 if (DataItems != null) {
                     adapter.setData(DataItems)
                     refresh_swipe.isRefreshing = false
+                    currentDate = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault()).format(Date())
+                    currentTime = SimpleDateFormat("HH:mm", Locale.getDefault()).format(Date())
                 }
             })
         }
 
-        val currentDate: String = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault()).format(Date())
-
-        val currentTime: String = SimpleDateFormat("HH:mm", Locale.getDefault()).format(Date())
-
         tanggal.text = "$currentDate, "
         waktu.text = currentTime
-
     }
 
     private fun showload(state : Boolean){
