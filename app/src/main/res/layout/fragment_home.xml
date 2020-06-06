@@ -78,18 +78,21 @@
                 android:textColor="@android:color/black"
                 android:textSize="18sp"
                 android:layout_alignParentEnd="true" />
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:layout_below="@id/tanggal"
-                android:layout_marginTop="16dp"
-                android:id="@+id/data_corona"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:nestedScrollingEnabled="false"
-                android:overScrollMode="never"
-                android:scrollIndicators="none"
-                android:scrollbars="none" />
         </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/data_corona"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:overScrollMode="never"
+            android:scrollIndicators="none"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+            app:layout_constraintVertical_bias="0.0" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
