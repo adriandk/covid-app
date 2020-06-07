@@ -3,4 +3,8 @@
     <color name="colorPrimary">#EB2188</color>
     <color name="colorPrimaryDark">#EB2188</color>
     <color name="colorAccent">#D81B60</color>
+
+    <color name="hijau">#00FF37</color>
+    <color name="merah">#FF4949</color>
+
 </resources>
