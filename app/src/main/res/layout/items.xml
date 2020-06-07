@@ -67,7 +67,7 @@
                     android:layout_marginTop="4dp"
                     android:fontFamily="@font/ptsansbold"
                     android:gravity="center"
-                    android:text="Positif"
+                    android:text="@string/positif"
                     android:textColor="@android:color/black"
                     android:textSize="16sp" />
             </LinearLayout>
@@ -136,7 +136,7 @@
                     android:layout_marginTop="4dp"
                     android:fontFamily="@font/ptsansbold"
                     android:gravity="center"
-                    android:text="Recover"
+                    android:text="@string/recover"
                     android:textColor="@android:color/black"
                     android:textSize="16sp" />
             </LinearLayout>
@@ -192,7 +192,7 @@
                     android:layout_marginTop="4dp"
                     android:fontFamily="@font/ptsansbold"
                     android:gravity="center"
-                    android:text="Dead"
+                    android:text="@string/dead"
                     android:textColor="@android:color/black"
                     android:textSize="16sp" />
             </LinearLayout>

@@ -7,4 +7,7 @@
     <string name="donate">Donate</string>
     <string name="feedback">Help &amp; Feedback</string>
     <string name="update_terkini">Latest Update</string>
+    <string name="recover">Recovered</string>
+    <string name="positif">Confirmed</string>
+    <string name="dead">Deaths</string>
 </resources>

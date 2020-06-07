@@ -8,4 +8,7 @@
     <string name="donate">Donasi</string>
     <string name="feedback">Bantuan &amp; Saran</string>
     <string name="update_terkini">Update Terkini</string>
+    <string name="recover">Sembuh</string>
+    <string name="positif">Terkonfirmasi</string>
+    <string name="dead">Meninggal</string>
 </resources>
