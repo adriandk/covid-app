@@ -63,17 +63,7 @@
                 android:id="@+id/tanggal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="18 July 2020, "
-                android:fontFamily="@font/ptsansreg"
-                android:textColor="@android:color/black"
-                android:textSize="18sp"
-                android:layout_toStartOf="@id/waktu" />
-
-            <TextView
-                android:id="@+id/waktu"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="18:30"
+                android:text="18 July 2020, 20:00"
                 android:fontFamily="@font/ptsansreg"
                 android:textColor="@android:color/black"
                 android:textSize="18sp"

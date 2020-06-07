@@ -27,9 +27,6 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        var currentDate: String = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault()).format(Date())
-        var currentTime: String = SimpleDateFormat("HH:mm", Locale.getDefault()).format(Date())
-
         adapter = Adapter()
         adapter.notifyDataSetChanged()
 
@@ -46,6 +43,7 @@ class HomeFragment : Fragment() {
             if (DataItems != null){
                 adapter.setData(DataItems)
                 showload(false)
+                dateTime()
             }
         })
 
@@ -54,19 +52,21 @@ class HomeFragment : Fragment() {
                 if (DataItems != null) {
                     adapter.setData(DataItems)
                     refresh_swipe.isRefreshing = false
-                    currentDate = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault()).format(Date())
-                    currentTime = SimpleDateFormat("HH:mm", Locale.getDefault()).format(Date())
+                    dateTime()
                 }
             })
         }
-
-        tanggal.text = "$currentDate, "
-        waktu.text = currentTime
     }
 
-    private fun showload(state : Boolean){
-        if (state){
-          progress_bar.visibility = View.VISIBLE
+    private fun dateTime() {
+        val currentDate: String =
+            SimpleDateFormat("dd MMMM yyyy, HH:mm", Locale.getDefault()).format(Date())
+        tanggal.text = currentDate
+    }
+
+    private fun showload(state: Boolean) {
+        if (state) {
+            progress_bar.visibility = View.VISIBLE
         } else {
             progress_bar.visibility = View.GONE
         }
