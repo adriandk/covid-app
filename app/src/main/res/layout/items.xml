@@ -7,10 +7,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:weightSum="3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,88 +18,116 @@
         app:layout_constraintVertical_bias="0.0">
 
         <androidx.cardview.widget.CardView
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="8dp"
-            android:layout_weight="1"
-            app:cardCornerRadius="8dp">
+            app:cardCornerRadius="16dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="16dp"
                 android:background="@drawable/outline_cardview"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="16dp">
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                <RelativeLayout
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
                     android:layout_gravity="center"
-                    android:layout_margin="16dp"
-                    android:src="@drawable/virus" />
+                    android:layout_margin="8dp">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/buttonsoundwarna"
+                        android:backgroundTint="@color/merah"
+                        android:src="@drawable/virus"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
 
                 <TextView
                     android:id="@+id/text_positif"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="30.000"
-                    android:textSize="24sp"
                     android:fontFamily="@font/ptsansbold"
-                    android:textColor="@color/merah" />
+                    android:gravity="center"
+                    android:text="6,663,304"
+                    android:textColor="@color/merah"
+                    android:textSize="24sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
                     android:layout_marginTop="4dp"
-                    android:text="Positif"
-                    android:textSize="16sp"
                     android:fontFamily="@font/ptsansbold"
-                    android:textColor="@android:color/black" />
+                    android:gravity="center"
+                    android:text="Positif"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0">
 
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="8dp"
             android:layout_weight="1"
-            app:cardCornerRadius="8dp">
+            app:cardCornerRadius="16dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="16dp"
                 android:background="@drawable/outline_cardview"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="16dp">
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                <RelativeLayout
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
                     android:layout_gravity="center"
-                    android:layout_margin="16dp"
-                    android:src="@drawable/recover" />
+                    android:layout_margin="8dp">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/buttonsoundwarna"
+                        android:backgroundTint="@color/hijau"
+                        android:src="@drawable/recover"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
 
                 <TextView
                     android:id="@+id/text_sembuh"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="100"
-                    android:textSize="24sp"
                     android:fontFamily="@font/ptsansbold"
-                    android:textColor="@color/hijau" />
+                    android:gravity="center"
+                    android:text="3,096,328"
+                    android:textColor="@color/hijau"
+                    android:textSize="24sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
                     android:layout_marginTop="4dp"
-                    android:text="Recover"
-                    android:textSize="16sp"
                     android:fontFamily="@font/ptsansbold"
-                    android:textColor="@android:color/black" />
+                    android:gravity="center"
+                    android:text="Recover"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -108,41 +136,49 @@
             android:layout_height="match_parent"
             android:layout_margin="8dp"
             android:layout_weight="1"
-            app:cardCornerRadius="8dp">
+            app:cardCornerRadius="16dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="16dp"
                 android:background="@drawable/outline_cardview"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="16dp">
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                <RelativeLayout
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
                     android:layout_gravity="center"
-                    android:layout_margin="16dp"
-                    android:src="@drawable/dead" />
+                    android:layout_margin="8dp">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/buttonsoundwarna"
+                        android:backgroundTint="@android:color/black"
+                        android:src="@drawable/dead"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
 
                 <TextView
                     android:id="@+id/text_meninggal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="100"
-                    android:textSize="24sp"
                     android:fontFamily="@font/ptsansbold"
-                    android:textColor="@android:color/black" />
+                    android:gravity="center"
+                    android:text="400,135"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
                     android:layout_marginTop="4dp"
-                    android:text="Dead"
-                    android:textSize="16sp"
                     android:fontFamily="@font/ptsansbold"
-                    android:textColor="@android:color/black" />
+                    android:gravity="center"
+                    android:text="Dead"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
             </LinearLayout>
 
 
