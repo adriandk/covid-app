@@ -41,12 +41,12 @@
                 android:id="@+id/relativeLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="64dp"
-                android:padding="16dp">
+                android:layout_marginTop="64dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
                     android:fontFamily="@font/ptsansbold"
                     android:text="@string/update_terkini"
                     android:textColor="@android:color/black"
@@ -56,6 +56,7 @@
                     android:id="@+id/tanggal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
                     android:layout_alignParentEnd="true"
                     android:fontFamily="@font/ptsansreg"
                     android:text="loading..."

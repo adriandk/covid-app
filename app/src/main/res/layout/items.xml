@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
+    android:padding="8dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
@@ -41,8 +41,14 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/buttonsoundwarna"
                         android:backgroundTint="@color/merah"
-                        android:src="@drawable/virus"
                         android:layout_centerInParent="true" />
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/virus" />
+
                 </RelativeLayout>
 
                 <TextView
@@ -105,8 +111,13 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/buttonsoundwarna"
                         android:backgroundTint="@color/hijau"
-                        android:src="@drawable/recover"
                         android:layout_centerInParent="true" />
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/recover" />
                 </RelativeLayout>
 
                 <TextView
@@ -156,8 +167,13 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/buttonsoundwarna"
                         android:backgroundTint="@android:color/black"
-                        android:src="@drawable/dead"
                         android:layout_centerInParent="true" />
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/dead" />
                 </RelativeLayout>
 
                 <TextView
