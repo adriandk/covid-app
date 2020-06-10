@@ -58,7 +58,7 @@
                     android:fontFamily="@font/ptsansbold"
                     android:gravity="center"
                     android:text="6,663,304"
-                    android:textColor="@color/merah"
+                    android:textColor="@color/red"
                     android:textSize="24sp" />
 
                 <TextView
@@ -127,7 +127,7 @@
                     android:fontFamily="@font/ptsansbold"
                     android:gravity="center"
                     android:text="3,096,328"
-                    android:textColor="@color/hijau"
+                    android:textColor="@color/green"
                     android:textSize="24sp" />
 
                 <TextView

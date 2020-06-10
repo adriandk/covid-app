@@ -30,18 +30,41 @@
                 android:layout_height="wrap_content"
                 android:background="@color/colorPrimary">
 
-                <TextView
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="BRUH" />
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/fight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lawan_covid_19"
+                        android:textColor="@android:color/white"
+                        android:textSize="24sp"
+                        android:fontFamily="@font/ptsansbold" />
+
+                    <TextView
+                        android:layout_below="@id/fight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/ayo_lawan_covid_19_di_indonesia"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/ptsansreg" />
+
+                </RelativeLayout>
             </FrameLayout>
 
 
             <RelativeLayout
+                android:layout_below="@id/frameLayout"
                 android:id="@+id/relativeLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="64dp">
+                android:layout_marginTop="48dp">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -73,6 +96,7 @@
                 android:overScrollMode="never"
                 android:scrollIndicators="none"
                 android:scrollbars="none" />
+
 
         </RelativeLayout>
     </androidx.core.widget.NestedScrollView>

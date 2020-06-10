@@ -4,7 +4,9 @@
     <color name="colorPrimaryDark">#EB2188</color>
     <color name="colorAccent">#D81B60</color>
 
-    <color name="hijau">#00FF37</color>
-    <color name="merah">#FF4949</color>
+    <color name="hijau">#c8ffbf</color>
+    <color name="merah">#ffbfbf</color>
+    <color name="green">#2ecc71</color>
+    <color name="red">#ff1800</color>
 
 </resources>
