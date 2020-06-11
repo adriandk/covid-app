@@ -26,7 +26,7 @@
             <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_below="@id/close_button"
                 android:id="@+id/imagepopup"
-                android:layout_width="120dp"
+                android:layout_width="140dp"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:src="@drawable/photo"
@@ -50,7 +50,7 @@
                 android:id="@+id/job"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="CEO of Dektech"
+                android:text="CEO of Deka Corp"
                 android:layout_centerInParent="true"
                 android:textSize="12sp"
                 android:fontFamily="@font/ptsansreg"
@@ -107,16 +107,29 @@
                     android:id="@+id/github"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:layout_centerInParent="true"
-                    android:background="@drawable/git" />
+                    android:background="@drawable/git"
+                    android:layout_toStartOf="@id/center" />
+
+                <TextView
+                    android:layout_width="16dp"
+                    android:layout_height="24dp"
+                    android:id="@+id/center"
+                    android:layout_centerInParent="true" />
 
                 <ImageButton
-                    android:layout_toEndOf="@id/github"
+                    android:layout_toEndOf="@id/center"
                     android:id="@+id/whatsapp"
-                    android:layout_marginStart="16dp"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:background="@drawable/wa" />
+
+                <ImageButton
+                    android:layout_toEndOf="@id/whatsapp"
+                    android:layout_marginStart="16dp"
+                    android:id="@+id/email"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/email" />
             </RelativeLayout>
 
 
