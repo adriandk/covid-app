@@ -25,7 +25,7 @@
             <ImageView
                 android:layout_below="@id/close_button"
                 android:id="@+id/imagepopup"
-                android:layout_width="140dp"
+                android:layout_width="160dp"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:src="@drawable/popup"
