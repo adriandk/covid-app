@@ -95,28 +95,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <ImageView
+                <ImageButton
                     android:layout_toStartOf="@id/github"
                     android:id="@+id/instagram"
                     android:layout_marginEnd="16dp"
                     android:layout_width="32dp"
                     android:layout_height="32dp"
-                    android:src="@drawable/instagram" />
+                    android:background="@drawable/instagram" />
 
-                <ImageView
+                <ImageButton
                     android:id="@+id/github"
                     android:layout_width="32dp"
                     android:layout_height="32dp"
                     android:layout_centerInParent="true"
-                    android:src="@drawable/git" />
+                    android:background="@drawable/git" />
 
-                <ImageView
+                <ImageButton
                     android:layout_toEndOf="@id/github"
                     android:id="@+id/whatsapp"
                     android:layout_marginStart="16dp"
                     android:layout_width="32dp"
                     android:layout_height="32dp"
-                    android:src="@drawable/wa" />
+                    android:background="@drawable/wa" />
             </RelativeLayout>
 
 

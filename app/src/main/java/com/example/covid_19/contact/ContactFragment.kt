@@ -40,7 +40,7 @@ class ContactFragment : Fragment() {
         }
 
         about_dev.setOnClickListener {
-
+            popUpContact()
         }
 
         donate.setOnClickListener {
