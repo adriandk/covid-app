@@ -112,7 +112,7 @@
 
                 <ImageButton
                     android:layout_toEndOf="@id/github"
-                    android:id="@+id/whatsapp"
+                    android:id="@+id/whatsap"
                     android:layout_marginStart="16dp"
                     android:layout_width="32dp"
                     android:layout_height="32dp"
