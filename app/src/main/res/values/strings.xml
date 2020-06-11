@@ -16,4 +16,5 @@
     <string name="rumah_sakit_rujukan">Referral Hospital</string>
     <string name="apa_itu_covid_19">What is COVID-19?</string>
     <string name="kasus_internasional">International Data</string>
+    <string name="gejala_covid_19">Self Diagnosis</string>
 </resources>
