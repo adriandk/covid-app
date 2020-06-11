@@ -1,11 +1,17 @@
 package com.example.covid_19
 
+import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
+import android.net.ConnectivityManager
+import android.net.NetworkCapabilities
+import android.net.NetworkInfo
 import android.os.Bundle
 import android.os.Handler
-import androidx.fragment.app.Fragment
-import kotlinx.android.synthetic.main.activity_main.*
+import android.util.Log
+import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
+import kotlin.math.log
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -13,14 +19,51 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        Handler().postDelayed({
-            val intent = Intent(this, HomeActivity::class.java)
-            finish()
-            startActivity(intent)
-            overridePendingTransition(R.anim.fadein, R.anim.fadeout)
-        },1000)
 
+        val internet = isOnline(this)
+        if (internet) {
+            Handler().postDelayed({
+                val intent = Intent(this, HomeActivity::class.java)
+                finish()
+                startActivity(intent)
+                overridePendingTransition(R.anim.fadein, R.anim.fadeout)
+            }, 1000)
+        } else {
+            val builder = AlertDialog.Builder(this)
+            builder.setTitle("Warning!")
+            builder.setMessage("You need internet connection to run this App!")
+            builder.setPositiveButton("OK") { _, _ ->
+                onDestroy()
+            }
+        }
     }
 
+    private fun isOnline(context: Context): Boolean {
+        val connectivityManager =
+            context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+        val capabilities =
+            connectivityManager.getNetworkCapabilities(connectivityManager.activeNetwork)
+        if (capabilities != null) {
+            when {
+                capabilities.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR) -> {
+                    Log.i("Internet", "NetworkCapabilities.TRANSPORT_CELLULAR")
+                    return true
+                }
+                capabilities.hasTransport(NetworkCapabilities.TRANSPORT_WIFI) -> {
+                    Log.i("Internet", "NetworkCapabilities.TRANSPORT_WIFI")
+                    return true
+                }
+                capabilities.hasTransport(NetworkCapabilities.TRANSPORT_ETHERNET) -> {
+                    Log.i("Internet", "NetworkCapabilities.TRANSPORT_ETHERNET")
+                    return true
+                }
+            }
+        }
+        return false
+    }
 
+    override fun onDestroy() {
+        super.onDestroy()
+
+    }
 }
