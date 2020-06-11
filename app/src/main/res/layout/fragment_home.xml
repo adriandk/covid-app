@@ -214,8 +214,8 @@
                         android:padding="16dp">
 
                         <ImageView
-                            android:layout_width="52dp"
-                            android:layout_height="52dp"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
                             android:layout_gravity="center"
                             android:src="@drawable/hospital" />
 
@@ -248,8 +248,8 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="52dp"
-                            android:layout_height="52dp"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
                             android:layout_gravity="center"
                             android:src="@drawable/book" />
 
@@ -293,8 +293,8 @@
                         android:padding="16dp">
 
                         <ImageView
-                            android:layout_width="52dp"
-                            android:layout_height="52dp"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
                             android:layout_gravity="center"
                             android:src="@drawable/diagnosa" />
 
@@ -327,8 +327,8 @@
                         android:padding="16dp">
 
                         <ImageView
-                            android:layout_width="52dp"
-                            android:layout_height="52dp"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
                             android:layout_gravity="center"
                             android:src="@drawable/data" />
 

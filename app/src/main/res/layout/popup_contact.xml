@@ -23,15 +23,20 @@
                 android:layout_alignParentEnd="true"
                 android:background="@drawable/closebutton" />
 
-            <de.hdodenhof.circleimageview.CircleImageView
+            <RelativeLayout
                 android:layout_below="@id/close_button"
+                android:layout_marginTop="-18dp"
                 android:id="@+id/imagepopup"
-                android:layout_width="140dp"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:src="@drawable/photo"
-                android:scaleType="fitXY"
-                android:adjustViewBounds="true" />
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_centerInParent="true">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/photo" />
+            </RelativeLayout>
 
             <TextView
                 android:layout_below="@id/imagepopup"
