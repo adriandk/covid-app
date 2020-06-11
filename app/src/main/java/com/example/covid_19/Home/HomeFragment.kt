@@ -48,6 +48,7 @@ class HomeFragment : Fragment() {
         })
 
         refresh_swipe.setOnRefreshListener {
+            mainViewModel.setData()
             mainViewModel.getData().observe(viewLifecycleOwner, Observer { DataItems ->
                 if (DataItems != null) {
                     adapter.setData(DataItems)
