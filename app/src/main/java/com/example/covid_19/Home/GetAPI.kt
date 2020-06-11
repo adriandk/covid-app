@@ -31,12 +31,12 @@ class GetAPI : ViewModel(){
                     data.add(items)
                     listdata.postValue(data)
                 } catch (ex : Exception){
-                    Log.d("Exception", ex.message.toString())
+//                    Log.d("Exception", ex.message.toString())
                 }
             }
 
             override fun onFailure(statusCode: Int, headers: Array<out Header>, responseBody: ByteArray, error: Throwable) {
-                Log.d("onFailure", error.message.toString())
+//                Log.d("onFailure", error.message.toString())
             }
         })
     }

@@ -23,13 +23,13 @@
                 android:layout_alignParentEnd="true"
                 android:background="@drawable/closebutton" />
 
-            <ImageView
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_below="@id/close_button"
                 android:id="@+id/imagepopup"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:src="@drawable/popup"
+                android:src="@drawable/photo"
                 android:scaleType="fitXY"
                 android:adjustViewBounds="true" />
 
@@ -50,7 +50,7 @@
                 android:id="@+id/job"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Junior Android Developer"
+                android:text="CEO of Dektech"
                 android:layout_centerInParent="true"
                 android:textSize="12sp"
                 android:fontFamily="@font/ptsansreg"
@@ -99,23 +99,23 @@
                     android:layout_toStartOf="@id/github"
                     android:id="@+id/instagram"
                     android:layout_marginEnd="16dp"
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
                     android:background="@drawable/instagram" />
 
                 <ImageButton
                     android:id="@+id/github"
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
                     android:layout_centerInParent="true"
                     android:background="@drawable/git" />
 
                 <ImageButton
                     android:layout_toEndOf="@id/github"
-                    android:id="@+id/whatsap"
+                    android:id="@+id/whatsapp"
                     android:layout_marginStart="16dp"
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
                     android:background="@drawable/wa" />
             </RelativeLayout>
 

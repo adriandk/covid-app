@@ -33,8 +33,10 @@ class MainActivity : AppCompatActivity() {
             builder.setTitle("Warning!")
             builder.setMessage("You need internet connection to run this App!")
             builder.setPositiveButton("OK") { _, _ ->
-                onDestroy()
+                finish()
             }
+            val dialog = builder.create()
+            dialog.show()
         }
     }
 
@@ -60,10 +62,5 @@ class MainActivity : AppCompatActivity() {
             }
         }
         return false
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-
     }
 }
