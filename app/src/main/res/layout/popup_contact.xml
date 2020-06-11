@@ -13,19 +13,20 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="14dp">
+            android:padding="8dp">
 
             <ImageButton
                 android:id="@+id/close_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="8dp"
                 android:layout_alignParentEnd="true"
                 android:background="@drawable/closebutton" />
 
             <ImageView
                 android:layout_below="@id/close_button"
                 android:id="@+id/imagepopup"
-                android:layout_width="160dp"
+                android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:src="@drawable/popup"
@@ -37,15 +38,89 @@
                 android:id="@+id/name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="16dp"
-                android:textAlignment="textStart"
-                android:text="Hi, I'm Adrian Daniel Kristanto a junior android programmer"
-                android:textSize="16dp"
-                android:fontFamily="@font/poppinsreg"
+                android:layout_marginTop="8dp"
+                android:text="Adrian Daniel Kristanto"
+                android:layout_centerInParent="true"
+                android:textSize="18sp"
+                android:fontFamily="@font/ptsansreg"
                 android:textColor="@android:color/black" />
 
-        </RelativeLayout>
+            <TextView
+                android:layout_below="@id/name"
+                android:id="@+id/job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Junior Android Developer"
+                android:layout_centerInParent="true"
+                android:textSize="12sp"
+                android:fontFamily="@font/ptsansreg"
+                android:textColor="@android:color/black" />
 
+            <ImageView
+                android:layout_below="@id/job"
+                android:id="@+id/loc_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/location" />
+
+
+            <TextView
+                android:layout_below="@id/loc_icon"
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cimahi, Indonesia"
+                android:layout_centerInParent="true"
+                android:textSize="14sp"
+                android:fontFamily="@font/ptsansreg"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_below="@id/location"
+                android:id="@+id/desc_dev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Junior android developer"
+                android:layout_centerInParent="true"
+                android:textSize="16sp"
+                android:fontFamily="@font/ptsansreg"
+                android:textColor="@android:color/black" />
+
+            <RelativeLayout
+                android:layout_below="@id/desc_dev"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_toStartOf="@id/github"
+                    android:id="@+id/instagram"
+                    android:layout_marginEnd="16dp"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/instagram" />
+
+                <ImageView
+                    android:id="@+id/github"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/git" />
+
+                <ImageView
+                    android:layout_toEndOf="@id/github"
+                    android:id="@+id/whatsapp"
+                    android:layout_marginStart="16dp"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/wa" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
     </androidx.cardview.widget.CardView>
 
 </RelativeLayout>
