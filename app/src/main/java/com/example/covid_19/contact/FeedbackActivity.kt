@@ -28,8 +28,9 @@ class FeedbackActivity : AppCompatActivity() {
                 val insertData = DataFeedback(saranId, name, email, feed)
 
                 if (saranId != null) {
-                    database.child(name).setValue(insertData).addOnCompleteListener {
+                    database.child(saranId).setValue(insertData).addOnCompleteListener {
                         Toast.makeText(this, getString(R.string.thankyou), Toast.LENGTH_LONG).show()
+                        onBackPressed()
                     }
                 } else {
                     Toast.makeText(this, getString(R.string.masukan), Toast.LENGTH_LONG).show()

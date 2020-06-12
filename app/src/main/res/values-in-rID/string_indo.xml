@@ -26,4 +26,5 @@
     <string name="error">Kolom ini harus diisi</string>
     <string name="submit">Submit</string>
     <string name="any_feedback_or_suggestion_would_be_appreciated">Beri kami masukan</string>
+    <string name="thank_you_for_your_kindness_you_can_contact_the_developer_to_make_a_donation">Terima kasih atas kebaikanmu, kamu bisa menghubungi developer untuk memberikan sumbangan :)</string>
 </resources>

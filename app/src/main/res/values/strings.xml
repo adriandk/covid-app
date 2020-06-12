@@ -25,4 +25,5 @@
     <string name="error">This field is required</string>
     <string name="submit">Submit</string>
     <string name="any_feedback_or_suggestion_would_be_appreciated">Give us feedback</string>
+    <string name="thank_you_for_your_kindness_you_can_contact_the_developer_to_make_a_donation">Thank you for your kindness, you can contact the developer to make a donation :)</string>
 </resources>

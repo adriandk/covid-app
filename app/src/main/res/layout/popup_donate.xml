@@ -12,12 +12,10 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="16dp">
+            android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/image"
-                android:layout_marginTop="18dp"
+                android:layout_above="@id/thanks"
                 android:layout_width="158dp"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
@@ -26,17 +24,45 @@
                 android:adjustViewBounds="true" />
 
             <TextView
-                android:layout_below="@id/image"
+                android:layout_centerInParent="true"
                 android:id="@+id/thanks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
+                android:fontFamily="@font/ptsansbold"
+                android:gravity="center"
+                android:text="Thank You!"
+                android:textColor="@android:color/black"
+                android:textSize="26sp" />
+
+            <TextView
+                android:layout_below="@id/thanks"
+                android:id="@+id/text"
+                android:layout_marginTop="4dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Thank You!"
-                android:textSize="28sp"
-                android:fontFamily="@font/ptsansbold"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="26dp"
+                android:text="@string/thank_you_for_your_kindness_you_can_contact_the_developer_to_make_a_donation"
+                android:textSize="14sp"
+                android:fontFamily="@font/ptsansreg"
                 android:textColor="@android:color/black" />
 
+            <Button
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="12dp"
+                android:id="@+id/buttondonate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="26dp"
+                android:background="@drawable/button_feedback"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="Ok"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/ptsansreg"
+                android:textSize="20sp" />
 
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
