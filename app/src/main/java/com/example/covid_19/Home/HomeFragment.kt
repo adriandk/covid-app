@@ -1,5 +1,6 @@
 package com.example.covid_19.Home
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -9,6 +10,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.covid_19.R
+import com.example.covid_19.international.InternationalData
 import kotlinx.android.synthetic.main.fragment_home.*
 import java.text.SimpleDateFormat
 import java.util.*
@@ -58,9 +60,30 @@ class HomeFragment : Fragment() {
             })
         }
 
-        if (savedInstanceState != null) {
-
+        rumahsakit.setOnClickListener {
+            val pindah = Intent(context, InternationalData::class.java)
+            activity!!.overridePendingTransition(R.anim.fadein, R.anim.fadeout)
+            startActivity(pindah)
         }
+
+        edukasi_covid.setOnClickListener {
+            val pindah = Intent(context, InternationalData::class.java)
+            activity!!.overridePendingTransition(R.anim.fadein, R.anim.fadeout)
+            startActivity(pindah)
+        }
+
+        diagnosa_covid.setOnClickListener {
+            val pindah = Intent(context, InternationalData::class.java)
+            activity!!.overridePendingTransition(R.anim.fadein, R.anim.fadeout)
+            startActivity(pindah)
+        }
+
+        data_internasional.setOnClickListener {
+            val pindah = Intent(context, InternationalData::class.java)
+            activity!!.overridePendingTransition(R.anim.fadein, R.anim.fadeout)
+            startActivity(pindah)
+        }
+
     }
 
     private fun dateTime() {

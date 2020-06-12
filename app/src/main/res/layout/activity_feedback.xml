@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,57 +10,78 @@
 
     <TextView
         android:id="@+id/feedback_text"
-        android:layout_above="@id/nama_feed"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="48dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/ptsansbold"
         android:gravity="center"
         android:text="@string/any_feedback_or_suggestion_would_be_appreciated"
-        android:textSize="28sp"
         android:textColor="@android:color/black"
-        android:fontFamily="@font/ptsansbold" />
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/nama_feed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/nama_feed"
-        android:layout_above="@id/email_feed"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:fontFamily="@font/ptsansreg"
+        android:hint="@string/masukan_nama"
         android:inputType="textPersonName"
-        android:hint="@string/masukan_nama" />
+        app:layout_constraintBottom_toTopOf="@+id/email_feed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/email_feed"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:fontFamily="@font/ptsansreg"
+        android:hint="@string/masukan_email"
         android:inputType="textEmailAddress"
-        android:layout_centerInParent="true"
-        android:hint="@string/masukan_email" />
+        app:layout_constraintBottom_toTopOf="@+id/saran_feedback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/saran_feedback"
-        android:layout_below="@id/email_feed"
         android:layout_width="match_parent"
-        android:layout_height="108dp"
-        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
         android:fontFamily="@font/ptsansreg"
+        android:hint="@string/saran_amp_masukan"
         android:inputType="textMultiLine"
-        android:hint="@string/saran_amp_masukan" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55" />
 
     <Button
-        android:layout_below="@id/saran_feedback"
         android:id="@+id/button_feed"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/saran_feedback"
         android:layout_margin="48dp"
         android:background="@drawable/button_feedback"
         android:backgroundTint="@color/colorPrimary"
-        android:textAllCaps="false"
         android:fontFamily="@font/ptsansreg"
-        android:textSize="18sp"
+        android:text="@string/submit"
+        android:textAllCaps="false"
         android:textColor="@android:color/white"
-        android:text="@string/submit" />
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saran_feedback"
+        app:layout_constraintVertical_bias="0.0" />
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

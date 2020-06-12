@@ -17,11 +17,11 @@ class FeedbackActivity : AppCompatActivity() {
             val email = email_feed.text.toString().trim()
             val feed = saran_feedback.text.toString()
             if (name.isEmpty()) {
-                nama_feed.error = "ISI DULU"
+                nama_feed.error = getString(R.string.error)
             } else if (email.isEmpty()) {
-                email_feed.error = "ISI DULU"
+                email_feed.error = getString(R.string.error)
             } else if (feed.isEmpty()) {
-                saran_feedback.error = "ISI DULU"
+                saran_feedback.error = getString(R.string.error)
             } else {
                 val database = FirebaseDatabase.getInstance().getReference("Saran dan masukan")
                 val saranId = database.push().key

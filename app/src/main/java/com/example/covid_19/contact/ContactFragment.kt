@@ -53,7 +53,7 @@ class ContactFragment : Fragment() {
         }
 
         donate.setOnClickListener {
-
+            popUpDonate()
         }
 
         help_feedback.setOnClickListener {
@@ -61,6 +61,12 @@ class ContactFragment : Fragment() {
             activity!!.overridePendingTransition(R.anim.fadein, R.anim.fadeout)
             startActivity(pindah)
         }
+    }
+
+    private fun popUpDonate() {
+        PopUp.setContentView(R.layout.popup_donate)
+        PopUp.window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+        PopUp.show()
     }
 
     private fun popUpContact() {

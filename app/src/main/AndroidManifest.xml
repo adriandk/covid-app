@@ -13,10 +13,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".DiagnosaActivity"
+            android:screenOrientation="nosensor" />
+        <activity
             android:name=".contact.FeedbackActivity"
             android:screenOrientation="nosensor" />
         <activity
-            android:name=".InternationalData"
+            android:name=".international.InternationalData"
             android:screenOrientation="nosensor" />
         <activity
             android:name=".PhotoViewer"
