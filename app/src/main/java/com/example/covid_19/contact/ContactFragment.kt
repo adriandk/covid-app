@@ -10,6 +10,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageButton
 import android.widget.Toast
 import androidx.fragment.app.Fragment
@@ -21,6 +22,7 @@ class ContactFragment : Fragment() {
 
     lateinit var PopUp: Dialog
     lateinit var closeButton: ImageButton
+    lateinit var okbutton: Button
 
     lateinit var whatsApp: ImageButton
     lateinit var instaGram: ImageButton
@@ -65,6 +67,10 @@ class ContactFragment : Fragment() {
 
     private fun popUpDonate() {
         PopUp.setContentView(R.layout.popup_donate)
+        okbutton = PopUp.findViewById(R.id.buttondonate)
+        okbutton.setOnClickListener {
+            PopUp.dismiss()
+        }
         PopUp.window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
         PopUp.show()
     }
