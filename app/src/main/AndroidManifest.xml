@@ -12,10 +12,18 @@
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".contact.FeedbackActivity"></activity>
-        <activity android:name=".InternationalData" />
-        <activity android:name=".PhotoViewer" />
-        <activity android:name=".HomeActivity" />
+        <activity
+            android:name=".contact.FeedbackActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".InternationalData"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".PhotoViewer"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".HomeActivity"
+            android:screenOrientation="nosensor" />
         <activity
             android:name=".MainActivity"
             android:theme="@style/Splash">

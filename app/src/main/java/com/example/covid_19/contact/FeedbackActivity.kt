@@ -25,16 +25,22 @@ class FeedbackActivity : AppCompatActivity() {
             } else {
                 val database = FirebaseDatabase.getInstance().getReference("Saran dan masukan")
                 val saranId = database.push().key
-                val saran = DataFeedback(saranId, name, email, feed)
+                val insertData = DataFeedback(saranId, name, email, feed)
 
                 if (saranId != null) {
-                    database.child(name).setValue(saran).addOnCompleteListener {
-                        Toast.makeText(this, "ARIGATO", Toast.LENGTH_LONG).show()
+                    database.child(name).setValue(insertData).addOnCompleteListener {
+                        Toast.makeText(this, getString(R.string.thankyou), Toast.LENGTH_LONG).show()
                     }
                 } else {
-                    Toast.makeText(this, getString(R.string.feedback), Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, getString(R.string.masukan), Toast.LENGTH_LONG).show()
                 }
             }
         }
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        finish()
+        overridePendingTransition(R.anim.fadein, R.anim.fadeout)
     }
 }

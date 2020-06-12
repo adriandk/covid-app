@@ -5,7 +5,7 @@
     <string name="about_developer">About Developer</string>
     <string name="contact">Contact</string>
     <string name="donate">Donate</string>
-    <string name="feedback">Help &amp; Feedback</string>
+    <string name="feedback">Feedback &amp; Suggestion</string>
     <string name="update_terkini">Latest Update</string>
     <string name="recover">Recovered</string>
     <string name="positif">Confirmed</string>
@@ -17,8 +17,12 @@
     <string name="apa_itu_covid_19">What is COVID-19?</string>
     <string name="kasus_internasional">International Data</string>
     <string name="gejala_covid_19">Self Diagnosis</string>
-    <string name="masukan_nama">Masukan Nama</string>
-    <string name="saran_amp_masukan">Saran &amp; Masukan</string>
-    <string name="masukan_email">Masukan email</string>
+    <string name="masukan_nama">Your name</string>
+    <string name="saran_amp_masukan">Your Feedback &amp; Suggestion</string>
+    <string name="masukan_email">Your email</string>
     <string name="masukan">Check your internet connection</string>
+    <string name="thankyou">Thank you for your feedback :)</string>
+    <string name="error">This field is required</string>
+    <string name="submit">Submit</string>
+    <string name="any_feedback_or_suggestion_would_be_appreciated">Give us feedback</string>
 </resources>

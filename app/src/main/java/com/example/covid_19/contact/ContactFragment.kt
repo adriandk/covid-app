@@ -58,6 +58,7 @@ class ContactFragment : Fragment() {
 
         help_feedback.setOnClickListener {
             val pindah = Intent(context, FeedbackActivity::class.java)
+            activity!!.overridePendingTransition(R.anim.fadein, R.anim.fadeout)
             startActivity(pindah)
         }
     }

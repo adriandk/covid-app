@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,10 +8,25 @@
     android:padding="16dp"
     tools:context=".contact.FeedbackActivity">
 
-    <EditText
-        android:id="@+id/nama_feed"
+    <TextView
+        android:id="@+id/feedback_text"
+        android:layout_above="@id/nama_feed"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:gravity="center"
+        android:text="@string/any_feedback_or_suggestion_would_be_appreciated"
+        android:textSize="28sp"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/ptsansbold" />
+
+    <EditText
+        android:id="@+id/nama_feed"
+        android:layout_above="@id/email_feed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/ptsansreg"
         android:inputType="textPersonName"
         android:hint="@string/masukan_nama" />
 
@@ -19,25 +34,33 @@
         android:id="@+id/email_feed"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/ptsansreg"
         android:inputType="textEmailAddress"
+        android:layout_centerInParent="true"
         android:hint="@string/masukan_email" />
 
     <EditText
         android:id="@+id/saran_feedback"
+        android:layout_below="@id/email_feed"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="108dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/ptsansreg"
         android:inputType="textMultiLine"
         android:hint="@string/saran_amp_masukan" />
 
     <Button
+        android:layout_below="@id/saran_feedback"
         android:id="@+id/button_feed"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
+        android:layout_margin="48dp"
+        android:background="@drawable/button_feedback"
+        android:backgroundTint="@color/colorPrimary"
         android:textAllCaps="false"
-        android:fontFamily="@font/ptsansbold"
-        android:textSize="22sp"
+        android:fontFamily="@font/ptsansreg"
+        android:textSize="18sp"
         android:textColor="@android:color/white"
-        android:text="Kirim" />
+        android:text="@string/submit" />
 
-</LinearLayout>
+</RelativeLayout>

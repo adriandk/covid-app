@@ -18,6 +18,6 @@
         android:id="@+id/kontak"
         android:title="About"
         app:showAsAction="always"
-        android:icon="@drawable/about"/>
+        android:icon="@drawable/contact" />
 
 </menu>
