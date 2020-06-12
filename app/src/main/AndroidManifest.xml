@@ -12,6 +12,7 @@
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".contact.FeedbackActivity"></activity>
         <activity android:name=".InternationalData" />
         <activity android:name=".PhotoViewer" />
         <activity android:name=".HomeActivity" />

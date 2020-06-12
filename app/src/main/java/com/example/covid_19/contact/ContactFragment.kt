@@ -7,12 +7,12 @@ import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.net.Uri
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.Toast
+import androidx.fragment.app.Fragment
 import com.example.covid_19.PhotoViewer
 import com.example.covid_19.R
 import kotlinx.android.synthetic.main.fragment_contact.*
@@ -26,6 +26,7 @@ class ContactFragment : Fragment() {
     lateinit var instaGram: ImageButton
     lateinit var gitHub: ImageButton
     lateinit var Email: ImageButton
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -56,7 +57,8 @@ class ContactFragment : Fragment() {
         }
 
         help_feedback.setOnClickListener {
-
+            val pindah = Intent(context, FeedbackActivity::class.java)
+            startActivity(pindah)
         }
     }
 

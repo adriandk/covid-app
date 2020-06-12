@@ -86,6 +86,7 @@
             </RelativeLayout>
 
             <androidx.recyclerview.widget.RecyclerView
+                tools:listitem="@layout/items"
                 android:id="@+id/data_corona"
                 android:layout_below="@id/relativeLayout"
                 android:layout_width="match_parent"

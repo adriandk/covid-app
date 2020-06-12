@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".contact.FeedbackActivity">
+
+    <EditText
+        android:id="@+id/nama_feed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/masukan_nama" />
+
+    <EditText
+        android:id="@+id/email_feed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="@string/masukan_email" />
+
+    <EditText
+        android:id="@+id/saran_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:hint="@string/saran_amp_masukan" />
+
+    <Button
+        android:id="@+id/button_feed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textAllCaps="false"
+        android:fontFamily="@font/ptsansbold"
+        android:textSize="22sp"
+        android:textColor="@android:color/white"
+        android:text="Kirim" />
+
+</LinearLayout>

@@ -19,6 +19,7 @@ class HomeFragment : Fragment() {
     lateinit var adapter : Adapter
 
 
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home, container, false)
@@ -33,9 +34,8 @@ class HomeFragment : Fragment() {
         data_corona.layoutManager = LinearLayoutManager(context)
         data_corona.adapter = adapter
 
-        mainViewModel = ViewModelProvider(this, ViewModelProvider.NewInstanceFactory()).get(
-            GetAPI::class.java
-        )
+        mainViewModel =
+            ViewModelProvider(this, ViewModelProvider.NewInstanceFactory()).get(GetAPI::class.java)
 
         mainViewModel.setData()
         showload(true)
@@ -57,6 +57,10 @@ class HomeFragment : Fragment() {
                 }
             })
         }
+
+        if (savedInstanceState != null) {
+
+        }
     }
 
     private fun dateTime() {
@@ -72,5 +76,10 @@ class HomeFragment : Fragment() {
             progress_bar.visibility = View.GONE
         }
     }
+
+//    override fun onSaveInstanceState(outState: Bundle) {
+//        super.onSaveInstanceState(outState)
+//
+//    }
 
 }
