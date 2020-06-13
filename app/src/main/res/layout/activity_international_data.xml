@@ -51,7 +51,7 @@
                 android:layout_marginEnd="16dp"
                 android:layout_alignParentEnd="true"
                 android:fontFamily="@font/ptsansreg"
-                android:text="loading..."
+                android:text="loading...."
                 android:textColor="@android:color/black"
                 android:textSize="18sp" />
         </RelativeLayout>
