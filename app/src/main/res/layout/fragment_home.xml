@@ -56,7 +56,6 @@
                 </RelativeLayout>
             </FrameLayout>
 
-
             <RelativeLayout
                 android:layout_below="@id/frameLayout"
                 android:id="@+id/relativeLayout"
