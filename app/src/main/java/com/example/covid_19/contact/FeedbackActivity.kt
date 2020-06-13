@@ -2,6 +2,7 @@ package com.example.covid_19.contact
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import com.example.covid_19.R
 import com.google.firebase.database.FirebaseDatabase
@@ -28,7 +29,9 @@ class FeedbackActivity : AppCompatActivity() {
                 val insertData = DataFeedback(saranId, name, email, feed)
 
                 if (saranId != null) {
+                    loading.visibility = View.VISIBLE
                     database.child(saranId).setValue(insertData).addOnCompleteListener {
+                        loading.visibility = View.GONE
                         Toast.makeText(this, getString(R.string.thankyou), Toast.LENGTH_LONG).show()
                         onBackPressed()
                     }

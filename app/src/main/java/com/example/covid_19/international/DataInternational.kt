@@ -5,5 +5,7 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 class DataInternational(
-
+    var positif: String? = null,
+    var sembuh: String? = null,
+    var meninggal: String? = null
 ) : Parcelable

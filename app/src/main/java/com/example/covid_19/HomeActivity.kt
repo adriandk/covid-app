@@ -2,6 +2,7 @@ package com.example.covid_19
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import com.example.covid_19.Home.HomeFragment
 import com.example.covid_19.contact.ContactFragment
@@ -9,9 +10,7 @@ import kotlinx.android.synthetic.main.activity_home.*
 
 class HomeActivity : AppCompatActivity() {
 
-//    final val STATE_TITLE : String = "state_title"
-//    final val STATE_LIST : String = "state_list"
-//    final val STATE_MODE : String = "state_mode"
+    var namaFragment = "home"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,17 +20,17 @@ class HomeActivity : AppCompatActivity() {
 
         bottom_nav.setOnNavigationItemSelectedListener {
             when (it.itemId) {
-                R.id.home -> loadFragment(HomeFragment())
+                R.id.home -> {
+                    namaFragment = "home"
+                    loadFragment(HomeFragment())
+                }
 //                R.id.search -> loadFragment(SearchFragment())
-                R.id.kontak -> loadFragment(ContactFragment())
+                R.id.kontak -> {
+                    namaFragment = "kontak"
+                    loadFragment(ContactFragment())
+                }
             }
             true
-        }
-
-        if (savedInstanceState == null) {
-            loadFragment(HomeFragment())
-        } else {
-            loadFragment(ContactFragment())
         }
     }
 
@@ -40,9 +39,26 @@ class HomeActivity : AppCompatActivity() {
             .replace(R.id.frame_layout, fragment)
             .commit()
     }
-//
+
 //    override fun onSaveInstanceState(outState: Bundle) {
 //        super.onSaveInstanceState(outState)
+//        outState.putString("selectedFragment", namaFragment)
+//    }
 //
+//    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+//        super.onRestoreInstanceState(savedInstanceState)
+//        namaFragment = savedInstanceState.getString("selectedFragment").toString()
+//        Log.d("Where are you?", "wait i stuck at $namaFragment")
+//
+//        when(namaFragment){
+//            "home" ->{
+//                loadFragment(HomeFragment())
+//                bottom_nav.selectedItemId = R.id.home
+//            }
+//            "kontak" ->{
+//                loadFragment(ContactFragment())
+//                bottom_nav.selectedItemId = R.id.kontak
+//            }
+//        }
 //    }
 }

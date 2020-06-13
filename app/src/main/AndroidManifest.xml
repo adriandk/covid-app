@@ -26,6 +26,7 @@
             android:screenOrientation="nosensor" />
         <activity
             android:name=".HomeActivity"
+            android:configChanges="orientation|screenSize|uiMode"
             android:screenOrientation="nosensor" />
         <activity
             android:name=".MainActivity"
