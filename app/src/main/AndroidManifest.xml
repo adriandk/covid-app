@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".EduActivity"
+            android:screenOrientation="nosensor" />
+        <activity
             android:name=".DiagnosaActivity"
             android:screenOrientation="nosensor" />
         <activity

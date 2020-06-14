@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EduActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Covid-19"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/ptsansreg"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_below="@id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/symptoms"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/ptsansbold"
+            android:textSize="26sp" />
+
+        <ImageView
+            android:id="@+id/image_symptoms"
+            android:layout_alignParentEnd="true"
+            android:layout_width="98dp"
+            android:layout_height="88dp"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:src="@drawable/popup" />
+
+        <LinearLayout
+            android:id="@+id/cardview1"
+            android:layout_below="@id/image_symptoms"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="18dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/cold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cold"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/ptsansbold" />
+
+                    <TextView
+                        android:layout_below="@id/cold"
+                        android:id="@+id/desc_cold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cold"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/ptsansreg" />
+
+                    <ImageView
+                        android:layout_below="@id/desc_cold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/popup"
+                        android:scaleType="fitXY"
+                        android:adjustViewBounds="true" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="18dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/cough"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cold"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/ptsansbold" />
+
+                    <TextView
+                        android:layout_below="@id/cough"
+                        android:id="@+id/desc_cough"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cold"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/ptsansreg" />
+
+                    <ImageView
+                        android:layout_below="@id/desc_cough"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/popup"
+                        android:scaleType="fitXY"
+                        android:adjustViewBounds="true" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/cardview1"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="18dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/fever"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cold"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/ptsansbold" />
+
+                    <TextView
+                        android:layout_below="@id/fever"
+                        android:id="@+id/desc_fever"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cold"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/ptsansreg" />
+
+                    <ImageView
+                        android:layout_below="@id/desc_fever"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/popup"
+                        android:scaleType="fitXY"
+                        android:adjustViewBounds="true" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="18dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/hardbreath"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cold"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/ptsansbold" />
+
+                    <TextView
+                        android:layout_below="@id/hardbreath"
+                        android:id="@+id/desc_breath"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cold"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/ptsansreg" />
+
+                    <ImageView
+                        android:layout_below="@id/desc_breath"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/popup"
+                        android:scaleType="fitXY"
+                        android:adjustViewBounds="true" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

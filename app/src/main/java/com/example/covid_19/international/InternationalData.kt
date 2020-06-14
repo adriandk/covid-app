@@ -68,4 +68,10 @@ class InternationalData : AppCompatActivity() {
         val tanggal = SimpleDateFormat("dd MMMM yyyy, HH:mm", Locale.getDefault()).format(Date())
         date_time.text = tanggal
     }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        finish()
+        overridePendingTransition(R.anim.fadein, R.anim.fadeout)
+    }
 }

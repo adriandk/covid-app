@@ -40,6 +40,11 @@ class HomeActivity : AppCompatActivity() {
             .commit()
     }
 
+    override fun onBackPressed() {
+        super.onBackPressed()
+        finish()
+    }
+
 //    override fun onSaveInstanceState(outState: Bundle) {
 //        super.onSaveInstanceState(outState)
 //        outState.putString("selectedFragment", namaFragment)
