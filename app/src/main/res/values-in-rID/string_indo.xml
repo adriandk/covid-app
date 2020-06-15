@@ -29,4 +29,6 @@
     <string name="thank_you_for_your_kindness_you_can_contact_the_developer_to_make_a_donation">Terima kasih atas kebaikanmu, kamu bisa menghubungi developer untuk memberikan sumbangan :)</string>
     <string name="thank_you">Terima Kasih!</string>
     <string name="symptoms">Gejala</string>
+    <string name="notif">New notification</string>
+    <string name="empty">please</string>
 </resources>

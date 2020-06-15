@@ -12,6 +12,12 @@
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <receiver
+            android:name=".NotificationService"
+            android:enabled="true"
+            android:exported="true" />
+
         <activity
             android:name=".EduActivity"
             android:screenOrientation="nosensor" />

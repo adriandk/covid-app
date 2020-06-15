@@ -5,14 +5,13 @@ import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
+import android.media.Image
 import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.ImageButton
-import android.widget.Toast
+import android.widget.*
 import androidx.fragment.app.Fragment
 import com.example.covid_19.PhotoViewer
 import com.example.covid_19.R
@@ -29,6 +28,9 @@ class ContactFragment : Fragment() {
     lateinit var gitHub: ImageButton
     lateinit var Email: ImageButton
 
+    lateinit var imagepopup: ImageView
+    lateinit var title: TextView
+    lateinit var message: TextView
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -68,6 +70,15 @@ class ContactFragment : Fragment() {
     private fun popUpDonate() {
         PopUp.setContentView(R.layout.popup_donate)
         okbutton = PopUp.findViewById(R.id.buttondonate)
+        imagepopup = PopUp.findViewById(R.id.imagepop)
+        title = PopUp.findViewById(R.id.thanks)
+        message = PopUp.findViewById(R.id.text)
+
+        title.text = getString(R.string.thank_you)
+        message.text =
+            getString(R.string.thank_you_for_your_kindness_you_can_contact_the_developer_to_make_a_donation)
+
+        imagepopup.setImageResource(R.drawable.popup)
         okbutton.setOnClickListener {
             PopUp.dismiss()
         }

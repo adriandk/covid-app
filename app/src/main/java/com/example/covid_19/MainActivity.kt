@@ -10,6 +10,9 @@ import android.os.Handler
 import android.util.Log
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.NotificationCompat
+import java.text.SimpleDateFormat
+import java.util.*
 import kotlin.math.log
 
 
@@ -19,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
+//        val date = SimpleDateFormat("HH:mm", Locale.getDefault()).format(Date())
         val internet = isOnline(this)
         if (internet) {
             Handler().postDelayed({
@@ -38,6 +41,16 @@ class MainActivity : AppCompatActivity() {
             val dialog = builder.create()
             dialog.show()
         }
+//
+//        if (date == "15:02"){
+//            val notif = NotificationCompat.Builder(this)
+//            notif.setSmallIcon(R.drawable.icon)
+//            notif.setContentTitle(getString(R.string.notif))
+//            notif.setContentText(getString(R.string.notif))
+//            notif.setAutoCancel(true)
+//        }
+
+
     }
 
     private fun isOnline(context: Context): Boolean {

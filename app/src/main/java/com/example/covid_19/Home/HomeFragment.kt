@@ -49,7 +49,10 @@ class HomeFragment : Fragment() {
                 adapter.setData(DataItems)
                 showload(false)
                 dateTime()
+                text_error.visibility = View.INVISIBLE
             } else {
+                showload(false)
+                text_error.visibility = View.VISIBLE
                 Toast.makeText(context, "Please refresh", Toast.LENGTH_LONG).show()
             }
         })
@@ -61,13 +64,15 @@ class HomeFragment : Fragment() {
                     adapter.setData(DataItems)
                     refresh_swipe.isRefreshing = false
                     dateTime()
+                    text_error.visibility = View.INVISIBLE
                 } else {
+                    text_error.visibility = View.VISIBLE
                     Toast.makeText(context, "Please refresh", Toast.LENGTH_LONG).show()
                 }
             })
         }
 
-        rumahsakit.setOnClickListener {
+        cardview_fight.setOnClickListener {
             val pindah = Intent(Intent.ACTION_VIEW)
             pindah.data =
                 Uri.parse("https://news.detik.com/berita/d-4942353/daftar-rumah-sakit-rujukan-covid-19-seluruh-indonesia/1")
