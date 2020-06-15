@@ -23,6 +23,7 @@
             android:screenOrientation="nosensor" />
         <activity
             android:name=".international.InternationalData"
+            android:configChanges="orientation|screenSize|uiMode"
             android:screenOrientation="nosensor" />
         <activity
             android:name=".PhotoViewer"
