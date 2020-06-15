@@ -1,9 +1,11 @@
 package com.example.covid_19.international
 
 import android.util.Log
+import android.widget.Toast
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.example.covid_19.HomeActivity
 import com.loopj.android.http.AsyncHttpClient
 import com.loopj.android.http.AsyncHttpResponseHandler
 import cz.msebera.android.httpclient.Header
@@ -35,16 +37,18 @@ class GetAPIInternational : ViewModel() {
                     dataInternational.postValue(data)
                 } catch (ex: Exception) {
                     Log.d("Error Data Inter", ex.toString())
+//                    Toast.makeText(InternationalData(), "Refresh", Toast.LENGTH_LONG).show()
                 }
             }
 
             override fun onFailure(
                 statusCode: Int,
-                headers: Array<out Header>,
-                responseBody: ByteArray,
-                error: Throwable
+                headers: Array<out Header>?,
+                responseBody: ByteArray?,
+                error: Throwable?
             ) {
                 Log.d("Error Data Inter", error.toString())
+//                Toast.makeText(InternationalData(), "Refresh", Toast.LENGTH_LONG).show()
             }
 
         })

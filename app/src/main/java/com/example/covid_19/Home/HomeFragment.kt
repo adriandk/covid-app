@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -44,10 +45,12 @@ class HomeFragment : Fragment() {
         mainViewModel.setData()
         showload(true)
         mainViewModel.getData().observe(viewLifecycleOwner, Observer { DataItems ->
-            if (DataItems != null){
+            if (DataItems != null) {
                 adapter.setData(DataItems)
                 showload(false)
                 dateTime()
+            } else {
+                Toast.makeText(context, "Please refresh", Toast.LENGTH_LONG).show()
             }
         })
 
@@ -58,6 +61,8 @@ class HomeFragment : Fragment() {
                     adapter.setData(DataItems)
                     refresh_swipe.isRefreshing = false
                     dateTime()
+                } else {
+                    Toast.makeText(context, "Please refresh", Toast.LENGTH_LONG).show()
                 }
             })
         }

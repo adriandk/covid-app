@@ -1,9 +1,11 @@
 package com.example.covid_19.Home
 
 import android.util.Log
+import android.widget.Toast
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.example.covid_19.HomeActivity
 import com.loopj.android.http.AsyncHttpClient
 import com.loopj.android.http.AsyncHttpResponseHandler
 import cz.msebera.android.httpclient.Header
@@ -32,7 +34,6 @@ class GetAPI : ViewModel(){
                     listdata.postValue(data)
                 } catch (ex: Exception) {
 //                    Log.d("Exception", ex.message.toString())
-                    setData()
                 }
             }
 
@@ -43,7 +44,6 @@ class GetAPI : ViewModel(){
                 error: Throwable?
             ) {
 //                Log.d("onFailure", error.message.toString())
-                setData()
             }
         })
     }
