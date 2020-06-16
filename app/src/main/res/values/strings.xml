@@ -41,5 +41,7 @@
     <string name="staysafe">Stay Safe!</string>
     <string name="danger">Immediately consult your doctor for further treatment!</string>
     <string name="safe">You have no symptoms, stay home, take care of your hygiene and health</string>
+    <string name="pertanyaan">Question</string>
+    <string name="next">Next</string>
 
 </resources>

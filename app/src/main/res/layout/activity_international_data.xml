@@ -38,7 +38,7 @@
             android:textColor="@android:color/black" />
 
         <RelativeLayout
-            android:layout_below="@id/back_international"
+            android:layout_above="@id/rv_inter"
             android:id="@+id/relativeLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -66,7 +66,7 @@
         </RelativeLayout>
 
         <androidx.recyclerview.widget.RecyclerView
-            android:layout_below="@id/relativeLayout"
+            android:layout_centerInParent="true"
             android:id="@+id/rv_inter"
             tools:listitem="@layout/items"
             android:layout_width="match_parent"

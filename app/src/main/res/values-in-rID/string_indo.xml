@@ -42,4 +42,6 @@
     <string name="staysafe">Tetap Aman!</string>
     <string name="danger">Segera periksakan diri kamu kedokter untuk penanganan lebih lanjut!</string>
     <string name="safe">Kamu tidak memiliki gejala, tinggal di rumah, jaga kebersihan dan kesehatan kamu ya!</string>
+    <string name="pertanyaan">Pertanyaan</string>
+    <string name="next">Lanjut</string>
 </resources>

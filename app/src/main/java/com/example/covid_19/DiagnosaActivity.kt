@@ -12,12 +12,12 @@ import kotlinx.android.synthetic.main.activity_diagnosa.*
 class DiagnosaActivity : AppCompatActivity() {
 
     var question = arrayOf(
-        "1. Apakah kamu baru saja berpergian keluar kota?",
-        "2. Apakah kamu pernah melakukan kontak dengan pasien positif corona?",
-        "3. Apakah suhu badan kamu lebih dari 38C?",
-        "4. Apakah kamu mengalami sakit tenggorokan?",
-        "5. Apakah kamu mengalami sesak nafas yang bukan dari asma?",
-        "6. Apakah kamu mengalami batuk kering dan pilek?"
+        "Apakah kamu baru saja berpergian keluar kota?",
+        "Apakah kamu pernah melakukan kontak dengan pasien positif corona?",
+        "Apakah suhu badan kamu lebih dari 38C?",
+        "Apakah kamu mengalami sakit tenggorokan?",
+        "Apakah kamu mengalami sesak nafas yang bukan dari asma?",
+        "Apakah kamu mengalami batuk kering dan pilek?"
     )
 
     var choice = arrayOf(
@@ -41,6 +41,7 @@ class DiagnosaActivity : AppCompatActivity() {
     lateinit var buttonPopUPcancel: Button
 
     var soal = 0
+    var nomorsoal = 1
     var benar = 0
     var jawaban = ""
     var jawabanno2 = false
@@ -50,6 +51,9 @@ class DiagnosaActivity : AppCompatActivity() {
         setContentView(R.layout.activity_diagnosa)
 
         PopUp = Dialog(this)
+
+        val nomor = nomorsoal.toString()
+        nosoal.text = "$nomor/6"
 
         pertanyaan.text = question[soal]
         option_a.text = choice[0]
@@ -79,10 +83,13 @@ class DiagnosaActivity : AppCompatActivity() {
 
             if (jawaban != "") {
                 soal++
+                nomorsoal++
                 jawaban = ""
                 if (soal == 6) {
                     popup(benar, jawabanno2)
                 } else {
+                    val nomor = nomorsoal.toString()
+                    nosoal.text = "$nomor/6"
                     pertanyaan.text = question[soal]
                     option_a.text = choice[0]
                     option_b.text = choice[1]
