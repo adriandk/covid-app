@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="280dp"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imagepop"
+                android:layout_above="@id/thanks"
+                android:layout_width="158dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/popup"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true" />
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:id="@+id/thanks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/ptsansbold"
+                android:gravity="center"
+                android:text="WARNING!"
+                android:textColor="@android:color/black"
+                android:textSize="26sp" />
+
+            <TextView
+                android:layout_below="@id/thanks"
+                android:id="@+id/text"
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="26dp"
+                android:text="@string/thank_you_for_your_kindness_you_can_contact_the_developer_to_make_a_donation"
+                android:textSize="14sp"
+                android:fontFamily="@font/ptsansreg"
+                android:textColor="@android:color/black" />
+
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/buttonno"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buttonexit"
+                    android:text="@string/cancel"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="@font/ptsansreg"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/buttonexit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buttonexit2"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:text="@string/exit"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/ptsansreg"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

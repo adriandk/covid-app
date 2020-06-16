@@ -11,6 +11,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <ImageButton
+            android:id="@+id/back_international"
+            android:layout_margin="16dp"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+
+            android:backgroundTint="@android:color/black"
+            android:background="@drawable/arrow_back" />
+
         <ProgressBar
             android:id="@+id/loading_inter"
             style="?android:attr/progressBarStyle"
@@ -19,7 +28,7 @@
             android:layout_height="wrap_content" />
 
         <TextView
-            android:layout_marginTop="38dp"
+            android:layout_marginTop="12dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -29,7 +38,7 @@
             android:textColor="@android:color/black" />
 
         <RelativeLayout
-            android:layout_above="@id/rv_inter"
+            android:layout_below="@id/back_international"
             android:id="@+id/relativeLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -57,8 +66,8 @@
         </RelativeLayout>
 
         <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@id/relativeLayout"
             android:id="@+id/rv_inter"
-            android:layout_centerInParent="true"
             tools:listitem="@layout/items"
             android:layout_width="match_parent"
             android:layout_height="370dp"

@@ -8,16 +8,23 @@
     android:orientation="vertical"
     tools:context=".DiagnosaActivity">
 
+    <ImageButton
+        android:id="@+id/back_diagnosis"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:backgroundTint="@android:color/black"
+        android:background="@drawable/arrow_back" />
+
     <TextView
         android:id="@+id/pertanyaan"
         android:layout_above="@id/buttonjawab_a"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="18dp"
+        android:layout_margin="16dp"
         android:text="1. Apakah kamu pernah melakukan kontak dengan pasien positif corona?"
         android:textColor="@android:color/black"
         android:fontFamily="@font/ptsansbold"
-        android:textSize="28sp" />
+        android:textSize="24sp" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/buttonjawab_a"
@@ -31,7 +38,7 @@
         android:foreground="?android:attr/selectableItemBackground"
         android:clickable="true"
         android:focusable="true"
-        app:cardCornerRadius="28dp">
+        app:cardCornerRadius="16dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -40,23 +47,21 @@
 
             <TextView
                 android:id="@+id/option_a"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:fontFamily="@font/berlinsans"
-                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/ptsansreg"
                 android:text="Jawaban A"
                 android:textColor="@android:color/black"
-                android:textSize="24sp" />
+                android:textSize="20sp" />
 
             <ImageButton
+                android:layout_alignParentEnd="true"
                 android:id="@+id/buttona"
-                android:layout_width="44dp"
-                android:layout_height="44dp"
-                android:layout_marginStart="8dp"
-                android:background="@drawable/buttonsoundwarna"
-                android:backgroundTint="@color/colorPrimary"
-                android:src="@drawable/check_false" />
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:background="@drawable/check" />
 
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
@@ -72,42 +77,41 @@
         android:foreground="?android:attr/selectableItemBackground"
         android:clickable="true"
         android:focusable="true"
-        app:cardCornerRadius="28dp">
+        app:cardCornerRadius="16dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="8dp">
 
-            <ImageButton
-                android:id="@+id/buttonb"
-                android:layout_width="44dp"
-                android:layout_height="44dp"
-                android:layout_marginStart="8dp"
-                android:background="@drawable/buttonsoundwarna"
-                android:backgroundTint="@color/colorPrimary"
-                android:src="@drawable/check_false" />
-
             <TextView
                 android:id="@+id/option_b"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:fontFamily="@font/berlinsans"
-                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/ptsansreg"
                 android:text="Jawaban b"
                 android:textColor="@android:color/black"
-                android:textSize="24sp" />
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/buttonb"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/check" />
 
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
 
     <Button
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_margin="18dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="12dp"
         android:id="@+id/next_button"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Next"
         android:fontFamily="@font/ptsansreg"

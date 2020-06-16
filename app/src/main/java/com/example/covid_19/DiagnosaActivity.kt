@@ -1,6 +1,7 @@
 package com.example.covid_19
 
 import android.app.Dialog
+import android.content.res.Resources
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
@@ -37,6 +38,7 @@ class DiagnosaActivity : AppCompatActivity() {
     lateinit var titlePopup: TextView
     lateinit var messagepopup: TextView
     lateinit var buttonPopUP: Button
+    lateinit var buttonPopUPcancel: Button
 
     var soal = 0
     var benar = 0
@@ -55,14 +57,14 @@ class DiagnosaActivity : AppCompatActivity() {
 
         buttonjawab_a.setOnClickListener {
             jawaban = option_a.text as String
-            buttona.setImageResource(R.drawable.check)
-            buttonb.setImageResource(R.drawable.check_false)
+            buttonb.setImageResource(R.drawable.check)
+            buttona.setImageResource(R.drawable.check_false)
         }
 
         buttonjawab_b.setOnClickListener {
             jawaban = option_b.text as String
-            buttonb.setImageResource(R.drawable.check)
-            buttona.setImageResource(R.drawable.check_false)
+            buttona.setImageResource(R.drawable.check)
+            buttonb.setImageResource(R.drawable.check_false)
         }
 
         next_button.setOnClickListener {
@@ -84,10 +86,14 @@ class DiagnosaActivity : AppCompatActivity() {
                     pertanyaan.text = question[soal]
                     option_a.text = choice[0]
                     option_b.text = choice[1]
-                    buttonb.setImageResource(R.drawable.check_false)
-                    buttona.setImageResource(R.drawable.check_false)
+                    buttonb.setImageResource(R.drawable.check)
+                    buttona.setImageResource(R.drawable.check)
                 }
             }
+        }
+
+        back_diagnosis.setOnClickListener {
+            onBackPressed()
         }
     }
 
@@ -124,8 +130,19 @@ class DiagnosaActivity : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
-        super.onBackPressed()
-        overridePendingTransition(R.anim.fadein, R.anim.fadeout)
-        finish()
+        PopUp.setContentView(R.layout.popupexit)
+        buttonPopUP = PopUp.findViewById(R.id.buttonexit)
+        buttonPopUPcancel = PopUp.findViewById(R.id.buttonno)
+
+        buttonPopUP.setOnClickListener {
+            PopUp.dismiss()
+            overridePendingTransition(R.anim.fadein, R.anim.fadeout)
+            finish()
+        }
+        buttonPopUPcancel.setOnClickListener {
+            PopUp.dismiss()
+        }
+        PopUp.window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+        PopUp.show()
     }
 }

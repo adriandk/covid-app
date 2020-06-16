@@ -3,6 +3,7 @@ package com.example.covid_19.international
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.covid_19.R
@@ -38,6 +39,8 @@ class InternationalData : AppCompatActivity() {
                 loading(false)
                 adapter.setData(DataItems)
                 tanggal()
+            } else {
+                Toast.makeText(this, "Please refresh", Toast.LENGTH_LONG).show()
             }
         })
 
@@ -50,8 +53,14 @@ class InternationalData : AppCompatActivity() {
                     adapter.setData(DataItems)
                     tanggal()
                     refresh_inter.isRefreshing = false
+                } else {
+                    Toast.makeText(this, "Please refresh", Toast.LENGTH_LONG).show()
                 }
             })
+        }
+
+        back_international.setOnClickListener {
+            onBackPressed()
         }
 
     }

@@ -31,4 +31,7 @@
     <string name="symptoms">Gejala</string>
     <string name="notif">New notification</string>
     <string name="empty">please</string>
+
+    <string name="exit">Keluar</string>
+    <string name="cancel">Batal</string>
 </resources>

@@ -30,5 +30,7 @@
     <string name="symptoms">Symptoms</string>
     <string name="notif">New notification</string>
     <string name="empty">please</string>
+    <string name="exit">Exit</string>
+    <string name="cancel">Cancel</string>
 
 </resources>
