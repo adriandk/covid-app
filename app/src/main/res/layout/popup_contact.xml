@@ -46,57 +46,60 @@
                 android:layout_marginTop="8dp"
                 android:text="Adrian Daniel Kristanto"
                 android:layout_centerInParent="true"
-                android:textSize="18sp"
-                android:fontFamily="@font/ptsansreg"
+                android:textSize="20sp"
+                android:fontFamily="@font/ptsansbold"
                 android:textColor="@android:color/black" />
 
             <TextView
+                android:layout_marginTop="4dp"
                 android:layout_below="@id/name"
-                android:id="@+id/job"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Android Developer"
-                android:layout_centerInParent="true"
-                android:textSize="12sp"
-                android:fontFamily="@font/ptsansreg"
-                android:textColor="@android:color/black" />
-
-            <ImageView
-                android:layout_below="@id/job"
-                android:id="@+id/loc_icon"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:layout_centerInParent="true"
-                android:src="@drawable/location" />
-
-
-            <TextView
-                android:layout_below="@id/loc_icon"
                 android:id="@+id/location"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cimahi, Indonesia"
+                android:gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Hai, my name is Adrian Daniel and this is and application about Coronavirus"
                 android:layout_centerInParent="true"
                 android:textSize="14sp"
                 android:fontFamily="@font/ptsansreg"
                 android:textColor="@android:color/black" />
 
-            <TextView
+            <ImageView
+                android:id="@+id/loc_icon"
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_below="@id/location"
+                android:src="@drawable/location"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/loc_icon"
+                android:layout_centerHorizontal="true"
+                android:text="Cimahi, Indonesia"
+                android:fontFamily="@font/ptsansreg"
+                android:textSize="16dp"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_above="@id/relative"
                 android:id="@+id/desc_dev"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="DESC"
-                android:layout_centerInParent="true"
+                android:layout_marginBottom="8dp"
+                android:text="Find me on"
+                android:layout_centerHorizontal="true"
                 android:textSize="16sp"
                 android:fontFamily="@font/ptsansreg"
                 android:textColor="@android:color/black" />
 
             <RelativeLayout
-                android:layout_below="@id/desc_dev"
-                android:layout_marginTop="16dp"
+                android:id="@+id/relative"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 

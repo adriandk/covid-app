@@ -105,19 +105,18 @@ class DiagnosaActivity : AppCompatActivity() {
         buttonPopUP = PopUp.findViewById(R.id.buttondonate)
 
         if (no2) {
-            imagePopup.setImageResource(R.drawable.search)
-            titlePopup.text = "WARNING"
-            messagepopup.text = "Segera periksakan diri anda kedokter!"
+            imagePopup.setImageResource(R.drawable.warning)
+            titlePopup.text = getString(R.string.warning)
+            messagepopup.text = getString(R.string.danger)
         } else {
             if (nilai >= 3) {
-                imagePopup.setImageResource(R.drawable.search)
-                titlePopup.text = "WARNING"
-                messagepopup.text = "Segera periksakan diri anda kedokter!"
+                imagePopup.setImageResource(R.drawable.warning)
+                titlePopup.text = getString(R.string.warning)
+                messagepopup.text = getString(R.string.danger)
             } else {
-                imagePopup.setImageResource(R.drawable.gift)
-                titlePopup.text = "Stay Safe!"
-                messagepopup.text =
-                    "Anda tidak memiliki gejala, tetep dirumah dan jagalah kebersihan"
+                imagePopup.setImageResource(R.drawable.popup)
+                titlePopup.text = getString(R.string.staysafe)
+                messagepopup.text = getString(R.string.safe)
             }
         }
 

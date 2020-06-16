@@ -20,7 +20,7 @@
                 android:layout_width="158dp"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:src="@drawable/popup"
+                android:src="@drawable/warning"
                 android:scaleType="fitXY"
                 android:adjustViewBounds="true" />
 
@@ -32,21 +32,20 @@
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/ptsansbold"
                 android:gravity="center"
-                android:text="WARNING!"
+                android:text="@string/warning"
                 android:textColor="@android:color/black"
                 android:textSize="26sp" />
 
             <TextView
                 android:layout_below="@id/thanks"
                 android:id="@+id/text"
-                android:layout_marginTop="4dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:layout_marginStart="26dp"
                 android:layout_marginEnd="26dp"
-                android:text="@string/thank_you_for_your_kindness_you_can_contact_the_developer_to_make_a_donation"
-                android:textSize="14sp"
+                android:text="@string/are_you_sure_want_exit"
+                android:textSize="18sp"
                 android:fontFamily="@font/ptsansreg"
                 android:textColor="@android:color/black" />
 

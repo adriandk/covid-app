@@ -31,7 +31,15 @@
     <string name="symptoms">Gejala</string>
     <string name="notif">New notification</string>
     <string name="empty">please</string>
-
     <string name="exit">Keluar</string>
     <string name="cancel">Batal</string>
+    <string name="tiredness">Mudah Lelah</string>
+    <string name="fever">Demam</string>
+    <string name="breathless">Sesak Nafas</string>
+    <string name="cough">Batuk</string>
+    <string name="warning">PERINGATAN!</string>
+    <string name="are_you_sure_want_exit">Apa kamu ingin keluar?</string>
+    <string name="staysafe">Tetap Aman!</string>
+    <string name="danger">Segera periksakan diri kamu kedokter untuk penanganan lebih lanjut!</string>
+    <string name="safe">Kamu tidak memiliki gejala, tinggal di rumah, jaga kebersihan dan kesehatan kamu ya!</string>
 </resources>
