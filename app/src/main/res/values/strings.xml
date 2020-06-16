@@ -11,7 +11,7 @@
     <string name="positif">Confirmed</string>
     <string name="dead">Deaths</string>
     <string name="lawan_covid_19">Fight COVID-19</string>
-    <string name="ayo_lawan_covid_19_di_indonesia">Ayo lawan COVID-19 di Indonesia!</string>
+    <string name="ayo_lawan_covid_19_di_indonesia">Let\'\s fight against COVID-19!</string>
     <string name="layanan">Services</string>
     <string name="rumah_sakit_rujukan">Referral Hospital</string>
     <string name="apa_itu_covid_19">COVID-19 Symptoms</string>
@@ -43,5 +43,7 @@
     <string name="safe">You have no symptoms, stay home, take care of your hygiene and health</string>
     <string name="pertanyaan">Question</string>
     <string name="next">Next</string>
+    <string name="punya_gejala_covid_19">Have symptoms of COVID-19?</string>
+    <string name="daftar_rumah_sakit_rujukan_di_indonesia">list of referral hospitals in Indonesia</string>
 
 </resources>
