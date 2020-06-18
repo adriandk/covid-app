@@ -27,15 +27,11 @@
     <string name="any_feedback_or_suggestion_would_be_appreciated">Give us feedback</string>
     <string name="thank_you_for_your_kindness_you_can_contact_the_developer_to_make_a_donation">Thank you for your kindness, you can contact the developer to make a donation :)</string>
     <string name="thank_you">Thank You!</string>
-    <string name="symptoms">Common Symptoms</string>
+    <string name="symptoms">Symptoms</string>
     <string name="notif">New notification</string>
     <string name="empty">please</string>
     <string name="exit">Exit</string>
     <string name="cancel">Cancel</string>
-    <string name="tiredness">Tiredness</string>
-    <string name="fever">Fever</string>
-    <string name="breathless">Breathless</string>
-    <string name="cough">Cough</string>
     <string name="warning">WARNING!</string>
     <string name="are_you_sure_want_exit">Are you sure want exit?</string>
     <string name="staysafe">Stay Safe!</string>
@@ -44,6 +40,14 @@
     <string name="pertanyaan">Question</string>
     <string name="next">Next</string>
     <string name="punya_gejala_covid_19">Have symptoms of COVID-19?</string>
-    <string name="daftar_rumah_sakit_rujukan_di_indonesia">list of referral hospitals in Indonesia</string>
+    <string name="daftar_rumah_sakit_rujukan_di_indonesia">list of referral hospitals</string>
+    <string name="face_nmask">Face\nMask</string>
+    <string name="hand_sanitizier">Hand Sanitizier</string>
+    <string name="latex_gloves">Latex\nGloves</string>
+    <string name="fever">Fever</string>
+    <string name="cough">Cough</string>
+    <string name="tiredness">Tiredness</string>
+    <string name="sore_troath">Sore troath</string>
+    <string name="requirement">Requirement</string>
 
 </resources>
