@@ -42,12 +42,12 @@
     <string name="punya_gejala_covid_19">Have symptoms of COVID-19?</string>
     <string name="daftar_rumah_sakit_rujukan_di_indonesia">list of referral hospitals</string>
     <string name="face_nmask">Face\nMask</string>
-    <string name="hand_sanitizier">Hand Sanitizier</string>
+    <string name="hand_sanitizier">Hand\nSanitizier</string>
     <string name="latex_gloves">Latex\nGloves</string>
     <string name="fever">Fever</string>
     <string name="cough">Cough</string>
     <string name="tiredness">Tiredness</string>
-    <string name="sore_troath">Sore troath</string>
+    <string name="sore_troath">Breathless</string>
     <string name="requirement">Requirement</string>
 
 </resources>

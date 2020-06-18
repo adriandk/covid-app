@@ -48,6 +48,6 @@
     <string name="fever">Demam</string>
     <string name="cough">Batuk</string>
     <string name="tiredness">Mudah Lelah</string>
-    <string name="sore_troath">Sakit tenggorokan</string>
+    <string name="sore_troath">Susah Nafas</string>
     <string name="requirement">Kebutuhan</string>
 </resources>
