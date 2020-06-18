@@ -25,7 +25,7 @@
             android:layout_marginStart="8dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Symptoms and Requirement"
+            android:text="The COVID-19"
             android:textColor="@android:color/black"
             android:fontFamily="@font/ptsansreg"
             android:textSize="18sp" />
@@ -65,8 +65,8 @@
 
                     <ImageView
                         android:layout_gravity="center"
-                        android:layout_width="34dp"
-                        android:layout_height="34dp"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
                         android:src="@drawable/mask"
                         android:scaleType="fitXY"
                         android:adjustViewBounds="true" />
@@ -101,8 +101,8 @@
 
                     <ImageView
                         android:layout_gravity="center"
-                        android:layout_width="34dp"
-                        android:layout_height="34dp"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
                         android:src="@drawable/wash"
                         android:scaleType="fitXY"
                         android:adjustViewBounds="true" />
@@ -136,8 +136,8 @@
 
                     <ImageView
                         android:layout_gravity="center"
-                        android:layout_width="34dp"
-                        android:layout_height="34dp"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
                         android:src="@drawable/gloves"
                         android:scaleType="fitXY"
                         android:adjustViewBounds="true" />
@@ -337,7 +337,7 @@
             android:layout_marginTop="18dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/symptoms"
+            android:text="@string/prevention"
             android:textColor="@android:color/black"
             android:fontFamily="@font/ptsansbold"
             android:textSize="28sp" />
@@ -369,7 +369,7 @@
                         android:layout_marginBottom="4dp"
                         android:layout_gravity="center"
                         android:fontFamily="@font/ptsansbold"
-                        android:text="@string/fever"
+                        android:text="@string/don_t_panic"
                         android:textColor="@android:color/black"
                         android:textSize="16sp" />
 
@@ -386,7 +386,7 @@
                         android:layout_marginEnd="18dp"
                         android:adjustViewBounds="true"
                         android:scaleType="fitXY"
-                        android:src="@drawable/fever" />
+                        android:src="@drawable/panic" />
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
@@ -410,7 +410,7 @@
                         android:layout_marginBottom="4dp"
                         android:layout_gravity="center"
                         android:fontFamily="@font/ptsansbold"
-                        android:text="@string/cough"
+                        android:text="@string/physical_distancing"
                         android:textColor="@android:color/black"
                         android:textSize="16sp" />
 
@@ -427,7 +427,7 @@
                         android:layout_marginEnd="18dp"
                         android:adjustViewBounds="true"
                         android:scaleType="fitXY"
-                        android:src="@drawable/cough" />
+                        android:src="@drawable/sosialdistancing" />
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
@@ -459,7 +459,7 @@
                         android:layout_marginBottom="4dp"
                         android:layout_gravity="center"
                         android:fontFamily="@font/ptsansbold"
-                        android:text="@string/sore_troath"
+                        android:text="@string/wash_hand"
                         android:textColor="@android:color/black"
                         android:textSize="16sp" />
 
@@ -476,7 +476,7 @@
                         android:layout_marginEnd="18dp"
                         android:adjustViewBounds="true"
                         android:scaleType="fitXY"
-                        android:src="@drawable/sorethroat" />
+                        android:src="@drawable/washhand" />
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
@@ -500,7 +500,7 @@
                         android:layout_marginBottom="4dp"
                         android:layout_gravity="center"
                         android:fontFamily="@font/ptsansbold"
-                        android:text="@string/tiredness"
+                        android:text="@string/stay_at_home"
                         android:textColor="@android:color/black"
                         android:textSize="16sp" />
 
@@ -517,7 +517,7 @@
                         android:layout_marginEnd="18dp"
                         android:adjustViewBounds="true"
                         android:scaleType="fitXY"
-                        android:src="@drawable/tiredness" />
+                        android:src="@drawable/quarantine" />
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>

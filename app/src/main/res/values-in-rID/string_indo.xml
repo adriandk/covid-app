@@ -44,10 +44,16 @@
     <string name="daftar_rumah_sakit_rujukan_di_indonesia">Daftar rumah sakit rujukan</string>
     <string name="face_nmask">Masker\nMuka</string>
     <string name="hand_sanitizier">Sabun Cuci Tangan</string>
-    <string name="latex_gloves">Sarung Tangan </string>
+    <string name="latex_gloves">Makanan\nSehat</string>
     <string name="fever">Demam</string>
     <string name="cough">Batuk</string>
     <string name="tiredness">Mudah Lelah</string>
     <string name="sore_troath">Susah Nafas</string>
     <string name="requirement">Kebutuhan</string>
+    <string name="prevention">Pencegahan</string>
+
+    <string name="don_t_panic">Jangan Panik</string>
+    <string name="physical_distancing">Jaga Jarak Fisik</string>
+    <string name="wash_hand">Cuci Tangan</string>
+    <string name="stay_at_home">Tetap dirumah</string>
 </resources>

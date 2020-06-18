@@ -43,11 +43,16 @@
     <string name="daftar_rumah_sakit_rujukan_di_indonesia">list of referral hospitals</string>
     <string name="face_nmask">Face\nMask</string>
     <string name="hand_sanitizier">Hand\nSanitizier</string>
-    <string name="latex_gloves">Latex\nGloves</string>
+    <string name="latex_gloves">Healty\nFood</string>
     <string name="fever">Fever</string>
     <string name="cough">Cough</string>
     <string name="tiredness">Tiredness</string>
     <string name="sore_troath">Breathless</string>
     <string name="requirement">Requirement</string>
+    <string name="prevention">Prevention</string>
+    <string name="don_t_panic">Don\'t Panic</string>
+    <string name="physical_distancing">Physical Distancing</string>
+    <string name="wash_hand">Wash Hand</string>
+    <string name="stay_at_home">Stay at Home</string>
 
 </resources>
