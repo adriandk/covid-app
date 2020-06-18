@@ -129,9 +129,10 @@
 
     <Button
         android:layout_alignParentBottom="true"
+        android:layout_marginBottom="28dp"
+        android:layout_marginTop="26dp"
         android:layout_marginStart="58dp"
         android:layout_marginEnd="58dp"
-        android:layout_marginBottom="14dp"
         android:id="@+id/next_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

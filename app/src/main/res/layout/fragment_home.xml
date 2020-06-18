@@ -145,7 +145,7 @@
                         android:layout_marginBottom="8dp"
                         android:text="@string/daftar_rumah_sakit_rujukan_di_indonesia"
                         android:textColor="@android:color/white"
-                        android:textSize="14sp"
+                        android:textSize="16sp"
                         android:fontFamily="@font/ptsansreg" />
 
                     <ImageButton
