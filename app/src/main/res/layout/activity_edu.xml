@@ -428,7 +428,7 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="4dp"
                         android:layout_gravity="center"
-                        android:fontFamily="@font/ptsansbold"
+                        android:fontFamily="@font/ptsansreg"
                         android:text="@string/don_t_panic"
                         android:textColor="@android:color/black"
                         android:textSize="16sp" />
@@ -471,7 +471,7 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="4dp"
                         android:layout_gravity="center"
-                        android:fontFamily="@font/ptsansbold"
+                        android:fontFamily="@font/ptsansreg"
                         android:text="@string/physical_distancing"
                         android:textColor="@android:color/black"
                         android:textSize="16sp" />
@@ -525,7 +525,7 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="4dp"
                         android:layout_gravity="center"
-                        android:fontFamily="@font/ptsansbold"
+                        android:fontFamily="@font/ptsansreg"
                         android:text="@string/wash_hand"
                         android:textColor="@android:color/black"
                         android:textSize="16sp" />
@@ -568,7 +568,7 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="4dp"
                         android:layout_gravity="center"
-                        android:fontFamily="@font/ptsansbold"
+                        android:fontFamily="@font/ptsansreg"
                         android:text="@string/stay_at_home"
                         android:textColor="@android:color/black"
                         android:textSize="16sp" />
