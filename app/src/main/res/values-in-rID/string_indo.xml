@@ -56,4 +56,6 @@
     <string name="physical_distancing">Jaga Jarak Fisik</string>
     <string name="wash_hand">Cuci Tangan</string>
     <string name="stay_at_home">Tetap dirumah</string>
+
+    <string name="how_to_survive_ncovid_19_pandemic">Cara bertahan hidup\ndi pandemi COVID-19</string>
 </resources>
