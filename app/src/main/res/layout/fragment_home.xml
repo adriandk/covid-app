@@ -198,11 +198,12 @@
                         android:padding="16dp"
                         android:orientation="vertical">
 
-                        <ImageView
+                        <ImageButton
                             android:layout_width="32dp"
                             android:layout_height="32dp"
                             android:layout_gravity="center"
-                            android:src="@drawable/book" />
+                            android:background="@drawable/book"
+                            android:backgroundTint="@color/colorPrimary" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -243,11 +244,12 @@
                         android:orientation="vertical"
                         android:padding="16dp">
 
-                        <ImageView
+                        <ImageButton
                             android:layout_width="32dp"
                             android:layout_height="32dp"
                             android:layout_gravity="center"
-                            android:src="@drawable/diagnosa" />
+                            android:background="@drawable/diagnosa"
+                            android:backgroundTint="@color/colorPrimary" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -277,11 +279,12 @@
                         android:orientation="vertical"
                         android:padding="16dp">
 
-                        <ImageView
+                        <ImageButton
                             android:layout_width="32dp"
                             android:layout_height="32dp"
                             android:layout_gravity="center"
-                            android:src="@drawable/data" />
+                            android:background="@drawable/data"
+                            android:backgroundTint="@color/colorPrimary" />
 
                         <TextView
                             android:layout_width="wrap_content"
