@@ -44,10 +44,12 @@ class HomeFragment : Fragment() {
 
         adapter = Adapter()
         adapter.notifyDataSetChanged()
-        adapter.stateRestorationPolicy = RecyclerView.Adapter.StateRestorationPolicy.PREVENT
 
         data_corona.layoutManager = LinearLayoutManager(context)
         data_corona.adapter = adapter
+
+        adapter.stateRestorationPolicy =
+            RecyclerView.Adapter.StateRestorationPolicy.PREVENT_WHEN_EMPTY
 
         mainViewModel =
             ViewModelProvider(this, ViewModelProvider.NewInstanceFactory()).get(GetAPI::class.java)
@@ -150,15 +152,19 @@ class HomeFragment : Fragment() {
         }
     }
 
-    override fun onSaveInstanceState(outState: Bundle) {
-        super.onSaveInstanceState(outState)
-        outState.putParcelable(
-            BUNDLE_RECYCLER_LAYOUT,
-            data_corona.layoutManager!!.onSaveInstanceState()
-        )
-    }
-
-    override fun onViewStateRestored(savedInstanceState: Bundle?) {
-        super.onViewStateRestored(savedInstanceState)
-    }
+//    override fun onViewStateRestored(savedInstanceState: Bundle?) {
+//        super.onViewStateRestored(savedInstanceState)
+//        if (savedInstanceState != null) {
+//            val savedRecyclerLayoutState = savedInstanceState.getParcelable<Parcelable>(BUNDLE_RECYCLER_LAYOUT)
+//            data_corona.layoutManager!!.onRestoreInstanceState(savedRecyclerLayoutState)
+//        }
+//    }
+//
+//    override fun onSaveInstanceState(outState: Bundle) {
+//        super.onSaveInstanceState(outState)
+//        outState.putParcelable(
+//            BUNDLE_RECYCLER_LAYOUT,
+//            data_corona.layoutManager!!.onSaveInstanceState()
+//        )
+//    }
 }
