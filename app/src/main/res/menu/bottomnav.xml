@@ -4,19 +4,19 @@
 
     <item
         android:id="@+id/home"
-        android:title="Home"
+        android:title="@string/home"
         app:showAsAction="always"
-        android:icon="@drawable/home"/>
+        android:icon="@drawable/home" />
 
-<!--    <item-->
-<!--        android:id="@+id/search"-->
-<!--        android:title="Search"-->
-<!--        app:showAsAction="always"-->
-<!--        android:icon="@drawable/search"/>-->
+    <item
+        android:id="@+id/search"
+        android:title="@string/search"
+        app:showAsAction="always"
+        android:icon="@drawable/search" />
 
     <item
         android:id="@+id/kontak"
-        android:title="About"
+        android:title="@string/about"
         app:showAsAction="always"
         android:icon="@drawable/contact" />
 

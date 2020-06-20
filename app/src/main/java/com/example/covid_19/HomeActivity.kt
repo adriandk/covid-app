@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
 import com.example.covid_19.Home.HomeFragment
+import com.example.covid_19.Search.SearchFragment
 import com.example.covid_19.contact.ContactFragment
 import kotlinx.android.synthetic.main.activity_home.*
 
@@ -24,7 +25,10 @@ class HomeActivity : AppCompatActivity() {
                     namaFragment = "home"
                     loadFragment(HomeFragment())
                 }
-//                R.id.search -> loadFragment(SearchFragment())
+                R.id.search -> {
+                    namaFragment = "cari"
+                    loadFragment(SearchFragment())
+                }
                 R.id.kontak -> {
                     namaFragment = "kontak"
                     loadFragment(ContactFragment())

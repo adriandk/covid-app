@@ -199,8 +199,8 @@
                         android:orientation="vertical">
 
                         <ImageButton
-                            android:layout_width="32dp"
-                            android:layout_height="32dp"
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
                             android:layout_gravity="center"
                             android:background="@drawable/book"
                             android:backgroundTint="@color/colorPrimary" />
@@ -213,7 +213,7 @@
                             android:text="@string/apa_itu_covid_19"
                             android:fontFamily="@font/ptsansreg"
                             android:textColor="@android:color/black"
-                            android:textSize="14sp"
+                            android:textSize="16sp"
                             android:textAlignment="center" />
                     </LinearLayout>
 
@@ -245,8 +245,8 @@
                         android:padding="16dp">
 
                         <ImageButton
-                            android:layout_width="32dp"
-                            android:layout_height="32dp"
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
                             android:layout_gravity="center"
                             android:background="@drawable/diagnosa"
                             android:backgroundTint="@color/colorPrimary" />
@@ -259,7 +259,7 @@
                             android:text="@string/gejala_covid_19"
                             android:fontFamily="@font/ptsansreg"
                             android:textColor="@android:color/black"
-                            android:textSize="14sp"
+                            android:textSize="16sp"
                             android:textAlignment="center" />
                     </LinearLayout>
 
@@ -280,8 +280,8 @@
                         android:padding="16dp">
 
                         <ImageButton
-                            android:layout_width="32dp"
-                            android:layout_height="32dp"
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
                             android:layout_gravity="center"
                             android:background="@drawable/data"
                             android:backgroundTint="@color/colorPrimary" />
@@ -294,7 +294,7 @@
                             android:text="@string/kasus_internasional"
                             android:fontFamily="@font/ptsansreg"
                             android:textColor="@android:color/black"
-                            android:textSize="14sp"
+                            android:textSize="16sp"
                             android:textAlignment="center" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>

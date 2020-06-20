@@ -55,5 +55,8 @@
     <string name="wash_hand">Wash Hand</string>
     <string name="stay_at_home">Stay at Home</string>
     <string name="how_to_survive_ncovid_19_pandemic">How to survive\nCOVID-19 pandemic</string>
+    <string name="search">Search</string>
+    <string name="home">Home</string>
+    <string name="about">About</string>
 
 </resources>
