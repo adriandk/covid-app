@@ -3,6 +3,7 @@ package com.example.covid_19.Home
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.os.Parcelable
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -25,7 +26,9 @@ class HomeFragment : Fragment() {
     lateinit var mainViewModel: GetAPI
     lateinit var adapter: Adapter
 
-    private val BUNDLE_RECYCLER_LAYOUT = "HomeFragment.data_corona.items"
+    private val LIST_STATE = "list_state"
+    private var savedRecyclerLayoutState: Parcelable? = null
+    private val BUNDLE_RECYCLER_LAYOUT = "recycler_layout"
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -38,11 +41,6 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-//        if (savedInstanceState != null){
-//            val savedRecyclerLayout = savedInstanceState.getParcelable(BUNDLE_RECYCLER_LAYOUT)
-//            data_corona.layoutManager!!.onRestoreInstanceState(savedRecyclerLayout)
-//        }
 
         adapter = Adapter()
         adapter.notifyDataSetChanged()
@@ -152,9 +150,15 @@ class HomeFragment : Fragment() {
         }
     }
 
-//    override fun onSaveInstanceState(outState: Bundle) {
-//        super.onSaveInstanceState(outState)
-//        outState.putParcelable(BUNDLE_RECYCLER_LAYOUT, data_corona.layoutManager!!.onSaveInstanceState())
-//    }
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putParcelable(
+            BUNDLE_RECYCLER_LAYOUT,
+            data_corona.layoutManager!!.onSaveInstanceState()
+        )
+    }
 
+    override fun onViewStateRestored(savedInstanceState: Bundle?) {
+        super.onViewStateRestored(savedInstanceState)
+    }
 }
