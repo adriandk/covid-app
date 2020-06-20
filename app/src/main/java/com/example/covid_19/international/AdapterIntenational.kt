@@ -25,11 +25,11 @@ class AdapterIntenational : RecyclerView.Adapter<AdapterIntenational.ViewHolder>
         return ViewHolder(view)
     }
 
-    override fun getItemCount(): Int = dataInter.size
-
     override fun onBindViewHolder(holder: AdapterIntenational.ViewHolder, position: Int) {
         holder.bind(dataInter[position])
     }
+
+    override fun getItemCount(): Int = dataInter.size
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bind(dataInterCovid: DataInternational) {

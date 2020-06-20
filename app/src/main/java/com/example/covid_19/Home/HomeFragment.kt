@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.covid_19.DiagnosaActivity
 import com.example.covid_19.EduActivity
 import com.example.covid_19.R
@@ -19,13 +20,18 @@ import kotlinx.android.synthetic.main.fragment_home.*
 import java.text.SimpleDateFormat
 import java.util.*
 
-
 class HomeFragment : Fragment() {
 
-    lateinit var mainViewModel : GetAPI
-    lateinit var adapter : Adapter
+    lateinit var mainViewModel: GetAPI
+    lateinit var adapter: Adapter
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    private val BUNDLE_RECYCLER_LAYOUT = "HomeFragment.data_corona.items"
+
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home, container, false)
     }
@@ -33,8 +39,14 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+//        if (savedInstanceState != null){
+//            val savedRecyclerLayout = savedInstanceState.getParcelable(BUNDLE_RECYCLER_LAYOUT)
+//            data_corona.layoutManager!!.onRestoreInstanceState(savedRecyclerLayout)
+//        }
+
         adapter = Adapter()
         adapter.notifyDataSetChanged()
+        adapter.stateRestorationPolicy = RecyclerView.Adapter.StateRestorationPolicy.PREVENT
 
         data_corona.layoutManager = LinearLayoutManager(context)
         data_corona.adapter = adapter
@@ -80,21 +92,28 @@ class HomeFragment : Fragment() {
         }
 
         edukasi_covid.setOnClickListener {
-            val pindah = Intent(context, EduActivity::class.java)
-            activity!!.overridePendingTransition(R.anim.fadein, R.anim.fadeout)
-            startActivity(pindah)
+            intent("edukasi")
         }
 
         diagnosa_covid.setOnClickListener {
-            val pindah = Intent(context, DiagnosaActivity::class.java)
-            activity!!.overridePendingTransition(R.anim.fadein, R.anim.fadeout)
-            startActivity(pindah)
+            intent("diagnosa")
+
         }
 
         data_internasional.setOnClickListener {
-            val pindah = Intent(context, InternationalData::class.java)
-            activity!!.overridePendingTransition(R.anim.fadein, R.anim.fadeout)
-            startActivity(pindah)
+            intent("data international")
+        }
+
+        data_icon.setOnClickListener {
+            intent("data international")
+        }
+
+        diagnosa_icon.setOnClickListener {
+            intent("diagnosa")
+        }
+
+        edukasi_icon.setOnClickListener {
+            intent("edukasi")
         }
     }
 
@@ -111,4 +130,31 @@ class HomeFragment : Fragment() {
             progress_bar.visibility = View.GONE
         }
     }
+
+    private fun intent(tujuan: String) {
+
+        when (tujuan) {
+            "edukasi" -> {
+                val pindah = Intent(context, EduActivity::class.java)
+                activity!!.overridePendingTransition(R.anim.fadein, R.anim.fadeout)
+                startActivity(pindah)
+            }
+            "data international" -> {
+                val pindah = Intent(context, InternationalData::class.java)
+                activity!!.overridePendingTransition(R.anim.fadein, R.anim.fadeout)
+                startActivity(pindah)
+            }
+            else -> {
+                val pindah = Intent(context, DiagnosaActivity::class.java)
+                activity!!.overridePendingTransition(R.anim.fadein, R.anim.fadeout)
+                startActivity(pindah)
+            }
+        }
+    }
+
+//    override fun onSaveInstanceState(outState: Bundle) {
+//        super.onSaveInstanceState(outState)
+//        outState.putParcelable(BUNDLE_RECYCLER_LAYOUT, data_corona.layoutManager!!.onSaveInstanceState())
+//    }
+
 }

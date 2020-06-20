@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/nama_provinsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jakarta"
+                android:fontFamily="@font/ptsansbold"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_below="@id/nama_provinsi"
+                android:id="@+id/positif"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Positif"
+                android:fontFamily="@font/ptsansreg"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:layout_below="@id/nama_provinsi"
+                android:layout_toEndOf="@id/positif"
+                android:id="@+id/sembuh"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sembuh"
+                android:fontFamily="@font/ptsansreg"
+                android:textColor="@color/green"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_below="@id/nama_provinsi"
+                android:layout_toEndOf="@id/sembuh"
+                android:id="@+id/meninggal"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meniggal"
+                android:fontFamily="@font/ptsansreg"
+                android:textColor="@color/red"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
