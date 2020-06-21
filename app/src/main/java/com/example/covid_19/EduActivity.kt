@@ -11,7 +11,6 @@ class EduActivity : AppCompatActivity() {
 
     override fun onBackPressed() {
         super.onBackPressed()
-        overridePendingTransition(R.anim.fadein, R.anim.fadeout)
         finish()
     }
 }

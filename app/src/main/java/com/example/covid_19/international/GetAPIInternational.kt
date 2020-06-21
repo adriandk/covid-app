@@ -49,8 +49,12 @@ class GetAPIInternational : ViewModel() {
                 responseBody: ByteArray?,
                 error: Throwable?
             ) {
-                Log.d("Error Data Inter", error.toString())
-//                Toast.makeText(InternationalData(), "Refresh", Toast.LENGTH_LONG).show()
+                val itemData = DataInternational()
+                itemData.positif = ""
+                itemData.meninggal = ""
+                itemData.sembuh = ""
+                data.add(itemData)
+                dataInternational.postValue(data)
             }
 
         })

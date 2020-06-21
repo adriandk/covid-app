@@ -45,6 +45,5 @@ class FeedbackActivity : AppCompatActivity() {
     override fun onBackPressed() {
         super.onBackPressed()
         finish()
-        overridePendingTransition(R.anim.fadein, R.anim.fadeout)
     }
 }

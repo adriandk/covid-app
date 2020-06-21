@@ -8,11 +8,11 @@
         app:showAsAction="always"
         android:icon="@drawable/home" />
 
-    <item
-        android:id="@+id/search"
-        android:title="@string/search"
-        app:showAsAction="always"
-        android:icon="@drawable/search" />
+    <!--    <item-->
+    <!--        android:id="@+id/search"-->
+    <!--        android:title="@string/search"-->
+    <!--        app:showAsAction="always"-->
+    <!--        android:icon="@drawable/search" />-->
 
     <item
         android:id="@+id/kontak"

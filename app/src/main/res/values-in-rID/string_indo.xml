@@ -12,10 +12,10 @@
     <string name="positif">Terkonfirmasi</string>
     <string name="dead">Meninggal</string>
     <string name="lawan_covid_19">Lawan COVID-19</string>
-    <string name="ayo_lawan_covid_19_di_indonesia">Ayo lawan COVID-19!</string>
+    <string name="ayo_lawan_covid_19_di_indonesia">Data COVID-19 di Indonesia</string>
     <string name="layanan">Layanan</string>
     <string name="rumah_sakit_rujukan">Rumah Sakit Rujukan</string>
-    <string name="apa_itu_covid_19">Gejala COVID-19</string>
+    <string name="apa_itu_covid_19">Bertahan dipandemi</string>
     <string name="kasus_internasional">Data Internasional</string>
     <string name="gejala_covid_19">Diagnosis Mandiri</string>
     <string name="masukan_nama">Nama kamu</string>
@@ -30,7 +30,7 @@
     <string name="thank_you">Terima Kasih!</string>
     <string name="symptoms">Gejala</string>
     <string name="notif">New notification</string>
-    <string name="empty">please</string>
+    <string name="empty">Pilih salah satu</string>
     <string name="exit">Keluar</string>
     <string name="cancel">Batal</string>
     <string name="warning">PERINGATAN!</string>
@@ -51,7 +51,6 @@
     <string name="sore_troath">Susah Nafas</string>
     <string name="requirement">Kebutuhan</string>
     <string name="prevention">Pencegahan</string>
-
     <string name="don_t_panic">Jangan Panik</string>
     <string name="physical_distancing">Jaga Jarak Fisik</string>
     <string name="wash_hand">Cuci Tangan</string>
@@ -60,4 +59,7 @@
     <string name="search">Cari</string>
     <string name="home">Beranda</string>
     <string name="about">Tentang</string>
+    <string name="multivitamin_nsuplement">Suplement\nMultivitamin</string>
+
+    <string name="hai_my_name_is_adrian_daniel_and_this_is_an_application_about_coronavirus">Hai, namaku Adrian Daniel, dan ini adalah aplikasi tentang COVID-19</string>
 </resources>

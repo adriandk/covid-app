@@ -49,7 +49,13 @@ class GetAPI : ViewModel(){
                 responseBody: ByteArray?,
                 error: Throwable?
             ) {
-                Log.d("onFailure", error.toString())
+                val items = Data()
+                items.name = ""
+                items.positif = ""
+                items.sembuh = ""
+                items.meninggal = ""
+                data.add(items)
+                listdata.postValue(data)
             }
         })
     }

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
+import androidx.navigation.Navigation
 import com.example.covid_19.Home.HomeFragment
 import com.example.covid_19.Search.SearchFragment
 import com.example.covid_19.contact.ContactFragment
@@ -11,27 +12,32 @@ import kotlinx.android.synthetic.main.activity_home.*
 
 class HomeActivity : AppCompatActivity() {
 
+    val homeFrag = HomeFragment()
+    val contactFrag = ContactFragment()
+    val fragmentManager = supportFragmentManager
+    var fragment: Fragment = homeFrag
+
     var namaFragment = "home"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        loadFragment(HomeFragment())
+        fragmentManager.beginTransaction().add(R.id.frame_layout, contactFrag, "2")
+            .hide(contactFrag).commit()
+        fragmentManager.beginTransaction().add(R.id.frame_layout, homeFrag, "1").commit()
 
         bottom_nav.setOnNavigationItemSelectedListener {
             when (it.itemId) {
                 R.id.home -> {
                     namaFragment = "home"
-                    loadFragment(HomeFragment())
-                }
-                R.id.search -> {
-                    namaFragment = "cari"
-                    loadFragment(SearchFragment())
+                    fragmentManager.beginTransaction().hide(fragment).show(homeFrag).commit()
+                    fragment = homeFrag
                 }
                 R.id.kontak -> {
-                    namaFragment = "kontak"
-                    loadFragment(ContactFragment())
+                    namaFragment = "contact"
+                    fragmentManager.beginTransaction().hide(fragment).show(contactFrag).commit()
+                    fragment = contactFrag
                 }
             }
             true
@@ -43,27 +49,4 @@ class HomeActivity : AppCompatActivity() {
             .replace(R.id.frame_layout, fragment)
             .commit()
     }
-
-
-//    override fun onSaveInstanceState(outState: Bundle) {
-//        super.onSaveInstanceState(outState)
-//        outState.putString("selectedFragment", namaFragment)
-//    }
-//
-//    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
-//        super.onRestoreInstanceState(savedInstanceState)
-//        namaFragment = savedInstanceState.getString("selectedFragment").toString()
-//        Log.d("Where are you?", "wait i stuck at $namaFragment")
-//
-//        when(namaFragment){
-//            "home" ->{
-//                loadFragment(HomeFragment())
-//                bottom_nav.selectedItemId = R.id.home
-//            }
-//            "kontak" ->{
-//                loadFragment(ContactFragment())
-//                bottom_nav.selectedItemId = R.id.kontak
-//            }
-//        }
-//    }
 }

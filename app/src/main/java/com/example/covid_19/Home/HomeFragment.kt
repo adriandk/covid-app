@@ -124,17 +124,17 @@ class HomeFragment : Fragment() {
         when (tujuan) {
             "edukasi" -> {
                 val pindah = Intent(context, EduActivity::class.java)
-                activity!!.overridePendingTransition(R.anim.fadein, R.anim.fadeout)
+                activity!!.overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
                 startActivity(pindah)
             }
             "data international" -> {
                 val pindah = Intent(context, InternationalData::class.java)
-                activity!!.overridePendingTransition(R.anim.fadein, R.anim.fadeout)
+                activity!!.overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
                 startActivity(pindah)
             }
             else -> {
                 val pindah = Intent(context, DiagnosaActivity::class.java)
-                activity!!.overridePendingTransition(R.anim.fadein, R.anim.fadeout)
+                activity!!.overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
                 startActivity(pindah)
             }
         }

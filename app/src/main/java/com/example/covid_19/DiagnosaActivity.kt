@@ -8,30 +8,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
 import kotlinx.android.synthetic.main.activity_diagnosa.*
+import java.util.*
 
 class DiagnosaActivity : AppCompatActivity() {
-
-    var question = arrayOf(
-        "Apakah kamu baru saja berpergian keluar kota?",
-        "Apakah kamu pernah melakukan kontak dengan pasien positif corona?",
-        "Apakah suhu badan kamu lebih dari 38C?",
-        "Apakah kamu mengalami sakit tenggorokan?",
-        "Apakah kamu mengalami sesak nafas yang bukan dari asma?",
-        "Apakah kamu mengalami batuk kering dan pilek?"
-    )
-
-    var choice = arrayOf(
-        "Ya", "Tidak"
-    )
-
-    var answer = arrayOf(
-        "Ya",
-        "Ya",
-        "Ya",
-        "Ya",
-        "Ya",
-        "Ya"
-    )
 
     lateinit var PopUp: Dialog
     lateinit var imagePopup: ImageView
@@ -39,6 +18,10 @@ class DiagnosaActivity : AppCompatActivity() {
     lateinit var messagepopup: TextView
     lateinit var buttonPopUP: Button
     lateinit var buttonPopUPcancel: Button
+
+    lateinit var question: Array<String>
+    lateinit var choice: Array<String>
+    lateinit var answer: Array<String>
 
     var soal = 0
     var nomorsoal = 1
@@ -49,6 +32,54 @@ class DiagnosaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_diagnosa)
+
+        val language = Locale.getDefault().displayLanguage
+
+        if (language == "English") {
+            question = arrayOf(
+                "Have you just returned from out of town?",
+                "Have you ever been in contact with a corona positive patient?",
+                "Is your body temperature more than 38C?",
+                "Do you have a sore throat?",
+                "Are you experiencing shortness of breath that is not from asthma?",
+                "Do you experience a dry cough and flu?"
+            )
+
+            choice = arrayOf(
+                "Yes", "No"
+            )
+
+            answer = arrayOf(
+                "Yes",
+                "Yes",
+                "Yes",
+                "Yes",
+                "Yes",
+                "Yes"
+            )
+        } else {
+            question = arrayOf(
+                "Apakah kamu baru saja berpergian keluar kota?",
+                "Apakah kamu pernah melakukan kontak dengan pasien positif corona?",
+                "Apakah suhu badan kamu lebih dari 38C?",
+                "Apakah kamu mengalami sakit tenggorokan?",
+                "Apakah kamu mengalami sesak nafas yang bukan dari asma?",
+                "Apakah kamu mengalami batuk kering dan pilek?"
+            )
+
+            choice = arrayOf(
+                "Ya", "Tidak"
+            )
+
+            answer = arrayOf(
+                "Ya",
+                "Ya",
+                "Ya",
+                "Ya",
+                "Ya",
+                "Ya"
+            )
+        }
 
         PopUp = Dialog(this)
 
@@ -131,6 +162,10 @@ class DiagnosaActivity : AppCompatActivity() {
             PopUp.dismiss()
             finish()
         }
+
+        PopUp.setCanceledOnTouchOutside(false)
+        PopUp.setCancelable(false)
+
         PopUp.window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
         PopUp.show()
     }
@@ -142,7 +177,6 @@ class DiagnosaActivity : AppCompatActivity() {
 
         buttonPopUP.setOnClickListener {
             PopUp.dismiss()
-            overridePendingTransition(R.anim.fadein, R.anim.fadeout)
             finish()
         }
         buttonPopUPcancel.setOnClickListener {

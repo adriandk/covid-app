@@ -11,10 +11,10 @@
     <string name="positif">Confirmed</string>
     <string name="dead">Deaths</string>
     <string name="lawan_covid_19">Fight COVID-19</string>
-    <string name="ayo_lawan_covid_19_di_indonesia">Let\'\s fight against COVID-19!</string>
+    <string name="ayo_lawan_covid_19_di_indonesia">COVID-19 data in Indonesia</string>
     <string name="layanan">Services</string>
     <string name="rumah_sakit_rujukan">Referral Hospital</string>
-    <string name="apa_itu_covid_19">COVID-19 Symptoms</string>
+    <string name="apa_itu_covid_19">Survive in the Pandemic</string>
     <string name="kasus_internasional">International Data</string>
     <string name="gejala_covid_19">Self Diagnosis</string>
     <string name="masukan_nama">Your name</string>
@@ -29,7 +29,7 @@
     <string name="thank_you">Thank You!</string>
     <string name="symptoms">Symptoms</string>
     <string name="notif">New notification</string>
-    <string name="empty">please</string>
+    <string name="empty">Choose one answer</string>
     <string name="exit">Exit</string>
     <string name="cancel">Cancel</string>
     <string name="warning">WARNING!</string>
@@ -58,5 +58,7 @@
     <string name="search">Search</string>
     <string name="home">Home</string>
     <string name="about">About</string>
+    <string name="multivitamin_nsuplement">Multivitamin\nSuplement</string>
+    <string name="hai_my_name_is_adrian_daniel_and_this_is_an_application_about_coronavirus">Hai, my name is Adrian Daniel and this is an application about COVID-19</string>
 
 </resources>

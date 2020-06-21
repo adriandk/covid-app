@@ -213,7 +213,7 @@
                                 android:layout_marginTop="4dp"
                                 android:fontFamily="@font/ptsansreg"
                                 android:gravity="center"
-                                android:text="Multivitamin\nSuplement"
+                                android:text="@string/multivitamin_nsuplement"
                                 android:textColor="@android:color/black"
                                 android:textSize="14sp" />
                         </LinearLayout>
