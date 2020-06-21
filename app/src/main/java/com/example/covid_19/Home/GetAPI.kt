@@ -19,17 +19,23 @@ class GetAPI : ViewModel(){
     internal fun setData(){
         val client = AsyncHttpClient()
         val data = ArrayList<Data>()
-        val url = "https://api.kawalcorona.com/indonesia"
+//        val url = "https://api.kawalcorona.com/indonesia"
 
-        client.get(url, object : AsyncHttpResponseHandler(){
-            override fun onSuccess(statusCode: Int, headers: Array<out Header>, responseBody: ByteArray) {
+        val url = "https://covid19.mathdro.id/api/countries/Indonesia/confirmed"
+
+        client.get(url, object : AsyncHttpResponseHandler() {
+            override fun onSuccess(
+                statusCode: Int,
+                headers: Array<out Header>,
+                responseBody: ByteArray
+            ) {
                 try {
                     val getdata = JSONArray(String(responseBody))
                     val items = Data()
-                    items.name = getdata.getJSONObject(0).getString("name")
-                    items.positif = getdata.getJSONObject(0).getString("positif")
-                    items.sembuh = getdata.getJSONObject(0).getString("sembuh")
-                    items.meninggal = getdata.getJSONObject(0).getString("meninggal")
+                    items.name = getdata.getJSONObject(0).getString("countryRegion")
+                    items.positif = getdata.getJSONObject(0).getString("confirmed")
+                    items.sembuh = getdata.getJSONObject(0).getString("recovered")
+                    items.meninggal = getdata.getJSONObject(0).getString("deaths")
                     data.add(items)
                     listdata.postValue(data)
                 } catch (ex: Exception) {
@@ -51,4 +57,5 @@ class GetAPI : ViewModel(){
     internal fun getData() : LiveData<ArrayList<Data>>{
         return listdata
     }
+
 }

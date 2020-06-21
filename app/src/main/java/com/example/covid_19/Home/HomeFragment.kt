@@ -26,10 +26,6 @@ class HomeFragment : Fragment() {
     lateinit var mainViewModel: GetAPI
     lateinit var adapter: Adapter
 
-    private val LIST_STATE = "list_state"
-    private var savedRecyclerLayoutState: Parcelable? = null
-    private val BUNDLE_RECYCLER_LAYOUT = "recycler_layout"
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -61,11 +57,6 @@ class HomeFragment : Fragment() {
                 adapter.setData(DataItems)
                 showload(false)
                 dateTime()
-                text_error.visibility = View.INVISIBLE
-            } else {
-                showload(false)
-                text_error.visibility = View.VISIBLE
-                Toast.makeText(context, "Please refresh", Toast.LENGTH_LONG).show()
             }
         })
 
@@ -77,9 +68,6 @@ class HomeFragment : Fragment() {
                     refresh_swipe.isRefreshing = false
                     dateTime()
                     text_error.visibility = View.INVISIBLE
-                } else {
-                    text_error.visibility = View.VISIBLE
-                    Toast.makeText(context, "Please refresh", Toast.LENGTH_LONG).show()
                 }
             })
         }

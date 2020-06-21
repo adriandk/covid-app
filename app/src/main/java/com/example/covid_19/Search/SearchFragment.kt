@@ -64,4 +64,6 @@ class SearchFragment : Fragment() {
             loadingprovinsi.visibility = View.INVISIBLE
         }
     }
+
+
 }

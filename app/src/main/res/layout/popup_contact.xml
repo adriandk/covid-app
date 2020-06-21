@@ -50,9 +50,53 @@
                 android:fontFamily="@font/ptsansbold"
                 android:textColor="@android:color/black" />
 
-            <TextView
-                android:layout_marginTop="4dp"
+            <RelativeLayout
+                android:id="@+id/relative"
+                android:layout_marginTop="8dp"
                 android:layout_below="@id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:layout_toStartOf="@id/github"
+                    android:id="@+id/instagram"
+                    android:layout_marginEnd="16dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/instagram" />
+
+                <ImageButton
+                    android:id="@+id/github"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/git"
+                    android:layout_centerInParent="true" />
+
+                <!--                <TextView-->
+                <!--                    android:layout_width="14dp"-->
+                <!--                    android:layout_height="24dp"-->
+                <!--                    android:id="@+id/center"-->
+                <!--                    android:layout_centerInParent="true" />-->
+
+                <!--                <ImageButton-->
+                <!--                    android:layout_toEndOf="@id/center"-->
+                <!--                    android:id="@+id/whatsapp"-->
+                <!--                    android:layout_width="20dp"-->
+                <!--                    android:layout_height="20dp"-->
+                <!--                    android:background="@drawable/wa" />-->
+
+                <ImageButton
+                    android:layout_toEndOf="@id/github"
+                    android:layout_marginStart="16dp"
+                    android:id="@+id/email"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/email" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/relative"
                 android:id="@+id/location"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -65,83 +109,22 @@
                 android:fontFamily="@font/ptsansreg"
                 android:textColor="@android:color/black" />
 
-            <ImageView
-                android:id="@+id/loc_icon"
-                android:layout_marginTop="16dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/location"
-                android:src="@drawable/location"
-                android:layout_centerHorizontal="true" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/loc_icon"
-                android:layout_centerHorizontal="true"
-                android:text="Cimahi, Indonesia"
-                android:fontFamily="@font/ptsansreg"
-                android:textSize="16dp"
-                android:textColor="@android:color/black" />
-
-            <TextView
-                android:layout_above="@id/relative"
-                android:id="@+id/desc_dev"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:text="Find me on"
-                android:layout_centerHorizontal="true"
-                android:textSize="16sp"
-                android:fontFamily="@font/ptsansreg"
-                android:textColor="@android:color/black" />
-
-            <RelativeLayout
-                android:id="@+id/relative"
+            <Button
                 android:layout_alignParentBottom="true"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="4dp"
+                android:id="@+id/whatsapp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <ImageButton
-                    android:layout_toStartOf="@id/github"
-                    android:id="@+id/instagram"
-                    android:layout_marginEnd="16dp"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:background="@drawable/instagram" />
-
-                <ImageButton
-                    android:id="@+id/github"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:background="@drawable/git"
-                    android:layout_toStartOf="@id/center" />
-
-                <TextView
-                    android:layout_width="16dp"
-                    android:layout_height="24dp"
-                    android:id="@+id/center"
-                    android:layout_centerInParent="true" />
-
-                <ImageButton
-                    android:layout_toEndOf="@id/center"
-                    android:id="@+id/whatsapp"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:background="@drawable/wa" />
-
-                <ImageButton
-                    android:layout_toEndOf="@id/whatsapp"
-                    android:layout_marginStart="16dp"
-                    android:id="@+id/email"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:background="@drawable/email" />
-            </RelativeLayout>
-
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/button_feedback"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="Contact"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/ptsansbold"
+                android:textSize="20sp" />
 
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
-
 </RelativeLayout>

@@ -19,7 +19,9 @@ class GetAPIInternational : ViewModel() {
     internal fun setData() {
         val client = AsyncHttpClient()
         val data = ArrayList<DataInternational>()
-        val API = "https://corona.lmao.ninja/v2/all"
+//        val API = "https://corona.lmao.ninja/v2/all"
+
+        val API = "https://covid19.mathdro.id/api"
 
         client.get(API, object : AsyncHttpResponseHandler() {
             override fun onSuccess(
@@ -30,9 +32,9 @@ class GetAPIInternational : ViewModel() {
                 try {
                     val getData = JSONObject(String(responseBody))
                     val itemData = DataInternational()
-                    itemData.positif = getData.getString("cases")
-                    itemData.meninggal = getData.getString("deaths")
-                    itemData.sembuh = getData.getString("recovered")
+                    itemData.positif = getData.getJSONObject("confirmed").getString("value")
+                    itemData.meninggal = getData.getJSONObject("deaths").getString("value")
+                    itemData.sembuh = getData.getJSONObject("recovered").getString("value")
                     data.add(itemData)
                     dataInternational.postValue(data)
                 } catch (ex: Exception) {

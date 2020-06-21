@@ -23,7 +23,7 @@ class ContactFragment : Fragment() {
     lateinit var closeButton: ImageButton
     lateinit var okbutton: Button
 
-    lateinit var whatsApp: ImageButton
+    lateinit var whatsApp: Button
     lateinit var instaGram: ImageButton
     lateinit var gitHub: ImageButton
     lateinit var Email: ImageButton
