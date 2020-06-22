@@ -49,4 +49,18 @@ class HomeActivity : AppCompatActivity() {
             .replace(R.id.frame_layout, fragment)
             .commit()
     }
+
+//    override fun onStop() {
+//        super.onStop()
+//        fragmentManager.beginTransaction().add(R.id.frame_layout, contactFrag, "2")
+//            .hide(contactFrag).commit()
+//        fragmentManager.beginTransaction().add(R.id.frame_layout, homeFrag, "1").hide(homeFrag).commit()
+//    }
+
+//    override fun onRestart() {
+//        super.onRestart()
+//        fragmentManager.beginTransaction().add(R.id.frame_layout, contactFrag, "2")
+//            .hide(contactFrag).commit()
+//        fragmentManager.beginTransaction().add(R.id.frame_layout, homeFrag, "1").commit()
+//    }
 }
