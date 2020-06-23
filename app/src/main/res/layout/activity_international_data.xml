@@ -8,6 +8,7 @@
     tools:context=".international.InternationalData">
 
     <RelativeLayout
+        android:background="@color/whitetoblack"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -16,8 +17,7 @@
             android:layout_margin="16dp"
             android:layout_width="28dp"
             android:layout_height="28dp"
-
-            android:backgroundTint="@android:color/black"
+            android:backgroundTint="@color/blacktowhite"
             android:background="@drawable/arrow_back" />
 
         <ProgressBar
@@ -35,7 +35,7 @@
             android:text="@string/kasus_internasional"
             android:textSize="28sp"
             android:fontFamily="@font/ptsansbold"
-            android:textColor="@android:color/black" />
+            android:textColor="@color/blacktowhite" />
 
         <RelativeLayout
             android:layout_above="@id/rv_inter"
@@ -50,7 +50,7 @@
                 android:layout_marginStart="16dp"
                 android:fontFamily="@font/ptsansbold"
                 android:text="@string/update_terkini"
-                android:textColor="@android:color/black"
+                android:textColor="@color/blacktowhite"
                 android:textSize="18sp" />
 
             <TextView
@@ -61,7 +61,7 @@
                 android:layout_alignParentEnd="true"
                 android:fontFamily="@font/ptsansreg"
                 android:text="loading..."
-                android:textColor="@android:color/black"
+                android:textColor="@color/blacktowhite"
                 android:textSize="18sp" />
         </RelativeLayout>
 

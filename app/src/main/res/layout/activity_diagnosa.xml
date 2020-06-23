@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    android:orientation="vertical"
+    android:background="@color/whitetoblack"
     tools:context=".DiagnosaActivity">
 
     <ImageButton
         android:id="@+id/back_diagnosis"
         android:layout_width="28dp"
         android:layout_height="28dp"
-        android:backgroundTint="@android:color/black"
+        android:backgroundTint="@color/blacktowhite"
         android:background="@drawable/arrow_back" />
 
     <TextView
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:text="@string/pertanyaan"
         android:fontFamily="@font/ptsansbold"
-        android:textColor="@android:color/black"
+        android:textColor="@color/blacktowhite"
         android:textSize="22sp" />
 
     <TextView
@@ -44,7 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:text="Apakah kamu pernah melakukan kontak dengan pasien positif corona?"
-        android:textColor="@android:color/black"
+        android:textColor="@color/blacktowhite"
         android:fontFamily="@font/ptsansbold"
         android:textSize="24sp" />
 
@@ -60,7 +60,8 @@
         android:foreground="?android:attr/selectableItemBackground"
         android:clickable="true"
         android:focusable="true"
-        app:cardCornerRadius="16dp">
+        app:cardCornerRadius="16dp"
+        app:cardBackgroundColor="@android:color/white">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -99,7 +100,8 @@
         android:foreground="?android:attr/selectableItemBackground"
         android:clickable="true"
         android:focusable="true"
-        app:cardCornerRadius="16dp">
+        app:cardCornerRadius="16dp"
+        app:cardBackgroundColor="@android:color/white">
 
         <RelativeLayout
             android:layout_width="match_parent"

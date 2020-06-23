@@ -12,6 +12,7 @@
         android:layout_height="match_parent">
 
         <RelativeLayout
+            android:background="@color/whitetoblack"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -82,7 +83,7 @@
                     android:layout_marginStart="16dp"
                     android:fontFamily="@font/ptsansbold"
                     android:text="@string/update_terkini"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/blacktowhite"
                     android:textSize="18sp" />
 
                 <TextView
@@ -93,7 +94,7 @@
                     android:layout_alignParentEnd="true"
                     android:fontFamily="@font/ptsansreg"
                     android:text="loading..."
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/blacktowhite"
                     android:textSize="18sp" />
             </RelativeLayout>
 
@@ -169,7 +170,7 @@
                 android:text="@string/layanan"
                 android:layout_marginStart="16dp"
                 android:fontFamily="@font/ptsansbold"
-                android:textColor="@android:color/black"
+                android:textColor="@color/blacktowhite"
                 android:textSize="24sp" />
 
             <LinearLayout
@@ -189,7 +190,8 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
                     android:layout_weight="1"
-                    app:cardCornerRadius="8dp">
+                    app:cardCornerRadius="8dp"
+                    app:cardBackgroundColor="@color/whitetogray">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -203,7 +205,7 @@
                             android:layout_height="34dp"
                             android:layout_gravity="center"
                             android:background="@drawable/book"
-                            android:backgroundTint="@color/colorPrimary" />
+                            android:backgroundTint="@color/bluetowhite" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -212,7 +214,7 @@
                             android:layout_gravity="center"
                             android:text="@string/apa_itu_covid_19"
                             android:fontFamily="@font/ptsansreg"
-                            android:textColor="@android:color/black"
+                            android:textColor="@color/blacktowhite"
                             android:textSize="14sp"
                             android:textAlignment="center" />
                     </LinearLayout>
@@ -236,7 +238,8 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
                     android:layout_weight="1"
-                    app:cardCornerRadius="8dp">
+                    app:cardCornerRadius="8dp"
+                    app:cardBackgroundColor="@color/whitetogray">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -250,7 +253,7 @@
                             android:layout_height="34dp"
                             android:layout_gravity="center"
                             android:background="@drawable/diagnosa"
-                            android:backgroundTint="@color/colorPrimary" />
+                            android:backgroundTint="@color/bluetowhite" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -259,7 +262,7 @@
                             android:layout_gravity="center"
                             android:text="@string/gejala_covid_19"
                             android:fontFamily="@font/ptsansreg"
-                            android:textColor="@android:color/black"
+                            android:textColor="@color/blacktowhite"
                             android:textSize="14sp"
                             android:textAlignment="center" />
                     </LinearLayout>
@@ -272,7 +275,8 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
                     android:layout_weight="1"
-                    app:cardCornerRadius="8dp">
+                    app:cardCornerRadius="8dp"
+                    app:cardBackgroundColor="@color/whitetogray">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -286,7 +290,7 @@
                             android:layout_height="34dp"
                             android:layout_gravity="center"
                             android:background="@drawable/data"
-                            android:backgroundTint="@color/colorPrimary" />
+                            android:backgroundTint="@color/bluetowhite" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -295,7 +299,7 @@
                             android:layout_gravity="center"
                             android:text="@string/kasus_internasional"
                             android:fontFamily="@font/ptsansreg"
-                            android:textColor="@android:color/black"
+                            android:textColor="@color/blacktowhite"
                             android:textSize="14sp"
                             android:textAlignment="center" />
                     </LinearLayout>

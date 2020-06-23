@@ -14,13 +14,14 @@
     <color name="abu">#AFAFAF</color>
     <color name="line">#D8D8D8</color>
 
-    <color name="whitetoblack">#FFFFFF</color>
+    <color name="whitetoblack">#000000</color>
 
-    <color name="blacktowhite">#000000</color>
+    <color name="blacktowhite">#FFFFFF</color>
 
     <color name="bluetowhite">#4671c6</color>
 
-    <color name="whitetogray">#FFFFFF</color>
+    <color name="whitetogray">#1a1a1a</color>
 
-    <color name="graytoblack">#f7f7f7</color>
+    <color name="graytoblack">#000000</color>
+
 </resources>
