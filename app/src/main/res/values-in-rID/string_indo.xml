@@ -60,6 +60,6 @@
     <string name="home">Beranda</string>
     <string name="about">Tentang</string>
     <string name="multivitamin_nsuplement">Suplement\nMultivitamin</string>
-
     <string name="hai_my_name_is_adrian_daniel_and_this_is_an_application_about_coronavirus">Hai, namaku Adrian Daniel, dan ini adalah aplikasi tentang COVID-19</string>
+    <string name="setting">Pengaturan</string>
 </resources>

@@ -19,20 +19,20 @@ import kotlin.math.log
 
 class MainActivity : AppCompatActivity() {
 
-    val alarmReceiver = AlarmReceiver()
+//    val alarmReceiver = AlarmReceiver()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        val repeatTime = "16:15"
-        val repeatMessage = "CHECK KASUS TERBARU YUK"
-        alarmReceiver.setRepeatingAlarm(
-            this,
-            AlarmReceiver.TYPE_REPEATING,
-            repeatTime,
-            repeatMessage
-        )
+//
+//        val repeatTime = "16:15"
+//        val repeatMessage = "CHECK KASUS TERBARU YUK"
+//        alarmReceiver.setRepeatingAlarm(
+//            this,
+//            AlarmReceiver.TYPE_REPEATING,
+//            repeatTime,
+//            repeatMessage
+//        )
 
         val internet = isOnline(this)
         if (internet) {

@@ -60,5 +60,6 @@
     <string name="about">About</string>
     <string name="multivitamin_nsuplement">Multivitamin\nSuplement</string>
     <string name="hai_my_name_is_adrian_daniel_and_this_is_an_application_about_coronavirus">Hai, my name is Adrian Daniel and this is an application about COVID-19</string>
+    <string name="setting">Setting</string>
 
 </resources>
