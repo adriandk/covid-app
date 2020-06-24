@@ -11,6 +11,7 @@ import android.util.Log
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.NotificationCompat
+import com.example.covid_19.broadcast.AlarmReceiver
 import java.text.SimpleDateFormat
 import java.util.*
 import kotlin.math.log
@@ -18,11 +19,21 @@ import kotlin.math.log
 
 class MainActivity : AppCompatActivity() {
 
+    val alarmReceiver = AlarmReceiver()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-//        val date = SimpleDateFormat("HH:mm", Locale.getDefault()).format(Date())
+        val repeatTime = "16:15"
+        val repeatMessage = "CHECK KASUS TERBARU YUK"
+        alarmReceiver.setRepeatingAlarm(
+            this,
+            AlarmReceiver.TYPE_REPEATING,
+            repeatTime,
+            repeatMessage
+        )
+
         val internet = isOnline(this)
         if (internet) {
             Handler().postDelayed({
@@ -41,16 +52,6 @@ class MainActivity : AppCompatActivity() {
             val dialog = builder.create()
             dialog.show()
         }
-//
-//        if (date == "15:02"){
-//            val notif = NotificationCompat.Builder(this)
-//            notif.setSmallIcon(R.drawable.icon)
-//            notif.setContentTitle(getString(R.string.notif))
-//            notif.setContentText(getString(R.string.notif))
-//            notif.setAutoCancel(true)
-//        }
-
-
     }
 
     private fun isOnline(context: Context): Boolean {

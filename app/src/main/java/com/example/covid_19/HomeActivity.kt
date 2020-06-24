@@ -28,8 +28,6 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-//        startAlarmBroadcastReceiver(this)
-
         fragmentManager.beginTransaction().add(R.id.frame_layout, contactFrag, "2")
             .hide(contactFrag).commit()
         fragmentManager.beginTransaction().add(R.id.frame_layout, homeFrag, "1").commit()
@@ -50,18 +48,5 @@ class HomeActivity : AppCompatActivity() {
             true
         }
     }
-
-//    private fun startAlarmBroadcastReceiver(context: Context) {
-//        val intent = Intent(context, DailyNotification::class.java)
-//        val pendingIntent = PendingIntent.getBroadcast(context, 0, intent, 0)
-//        val alarmManager = context.getSystemService(Context.ALARM_SERVICE) as AlarmManager
-//        alarmManager.cancel(pendingIntent)
-//        val calendar: Calendar = Calendar.getInstance()
-//        calendar.timeInMillis = System.currentTimeMillis()
-//        calendar.set(Calendar.HOUR_OF_DAY, 23)
-//        calendar.set(Calendar.MINUTE, 15)
-//        calendar.set(Calendar.SECOND, 0)
-//        alarmManager[AlarmManager.RTC_WAKEUP, calendar.timeInMillis] = pendingIntent
-//    }
 
 }
